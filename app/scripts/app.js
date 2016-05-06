@@ -30,6 +30,32 @@ angular
   controller: 'SignupCtrl',
   controllerAs: 'signup'
 })
+
+.when('/money', {
+  templateUrl: 'views/money.html',
+  controller: 'MoneyCtrl',
+  controllerAs: 'money'
+})
+.when('/property', {
+  templateUrl: 'views/property.html',
+  controller: 'PropertyCtrl',
+  controllerAs: 'property'
+})
+.when('/service', {
+  templateUrl: 'views/service.html',
+  controller: 'ServiceCtrl',
+  controllerAs: 'service'
+})
+.when('/news', {
+  templateUrl: 'views/news.html',
+  controller: 'NewsCtrl',
+  controllerAs: 'news'
+})
+.when('/q', {
+  templateUrl: 'views/q.html',
+  controller: 'QCtrl',
+  controllerAs: 'q'
+})
 .otherwise({
         redirectTo: '/'
       });
