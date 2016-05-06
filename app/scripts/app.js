@@ -56,6 +56,11 @@ angular
   controller: 'QCtrl',
   controllerAs: 'q'
 })
+.when('/meet', {
+  templateUrl: 'views/meet.html',
+  controller: 'MeetCtrl',
+  controllerAs: 'meet'
+})
 .otherwise({
         redirectTo: '/'
       });
