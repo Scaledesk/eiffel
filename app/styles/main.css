@@ -1,4 +1,14 @@
 
-.body-inner{
+.body-inner-padding{
 padding-top: 100px
+}
+
+.header1-bg-color{
+  background-color: white !important;
+}
+
+
+.footer-bg-color{
+  background-color: grey !important;
+  color: white !important;
 }
