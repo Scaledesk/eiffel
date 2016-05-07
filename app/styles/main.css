@@ -11,4 +11,10 @@ padding-top: 100px
 .footer-bg-color{
   background-color: grey !important;
   color: white !important;
+
+}
+
+
+.login{
+	height: 410px !important;
 }

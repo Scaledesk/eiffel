@@ -61,6 +61,16 @@ angular
   controller: 'MeetCtrl',
   controllerAs: 'meet'
 })
+.when('/forgot-pwd', {
+  templateUrl: 'views/forgot-pwd.html',
+  controller: 'ForgotPwdCtrl',
+  controllerAs: 'forgotPwd'
+})
+.when('/profile', {
+  templateUrl: 'views/profile.html',
+  controller: 'ProfileCtrl',
+  controllerAs: 'profile'
+})
 .otherwise({
         redirectTo: '/'
       });
