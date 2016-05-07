@@ -71,6 +71,46 @@ angular
   controller: 'ProfileCtrl',
   controllerAs: 'profile'
 })
+.when('/my-office', {
+  templateUrl: 'views/my-office.html',
+  controller: 'MyOfficeCtrl',
+  controllerAs: 'myOffice'
+})
+.when('/settings', {
+  templateUrl: 'views/settings.html',
+  controller: 'SettingsCtrl',
+  controllerAs: 'settings'
+})
+.when('/change-pwd', {
+  templateUrl: 'views/change-pwd.html',
+  controller: 'ChangePwdCtrl',
+  controllerAs: 'changePwd'
+})
+.when('/search', {
+  templateUrl: 'views/search.html',
+  controller: 'SearchCtrl',
+  controllerAs: 'search'
+})
+.when('/messaging', {
+  templateUrl: 'views/messaging.html',
+  controller: 'MessagingCtrl',
+  controllerAs: 'messaging'
+})
+.when('/notification', {
+  templateUrl: 'views/notification.html',
+  controller: 'NotificationCtrl',
+  controllerAs: 'notification'
+})
+.when('/privacy', {
+  templateUrl: 'views/privacy.html',
+  controller: 'PrivacyCtrl',
+  controllerAs: 'privacy'
+})
+.when('/my-network', {
+  templateUrl: 'views/my-network.html',
+  controller: 'MyNetworkCtrl',
+  controllerAs: 'myNetwork'
+})
 .otherwise({
         redirectTo: '/'
       });
