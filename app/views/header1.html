@@ -10,7 +10,7 @@
         <!-- brand -->
         <a class="navbar-brand">
           <div ui-include="'../assets/images/logo.svg'"></div>
-          <img src="../assets/images/logo.png" alt="." class="hide">
+          <img src="../assets/images/logo.png" alt="." >
           <span class="hidden-folded inline">{{app.name}}</span>
         </a>
 <!-- / brand -->
@@ -18,27 +18,7 @@
 
         <!-- nabar right -->
         <ul class="nav navbar-nav pull-right">
-          <li class="nav-item dropdown">
-            <a class="nav-link" href data-toggle="dropdown">
-              <i class="material-icons">&#xe8b6;</i>
-            </a>
-            <div class="dropdown-menu text-color w-lg animated fadeInUp pull-right">
-              <!-- <div ui-include="'../views/blocks/navbar.form.html'"></div> -->
-                              <!-- search form -->
-                <form class="navbar-form form-inline navbar-item m-l v-m" role="search">
-                  <div class="form-group l-h m-a-0">
-                    <div class="input-group input-group-sm">
-                      <input type="text" class="form-control" placeholder="Search projects...">
-                      <span class="input-group-btn">
-                        <button type="submit" class="btn white b-a no-shadow"><i class="fa fa-search"></i></button>
-                      </span>
-                    </div>
-                  </div>
-                </form>
-                <!-- / search form -->
-
-            </div>
-          </li>
+          
           <li class="nav-item dropdown">
             <a class="nav-link" href="#/login" data-toggle="dropdown">
               <span>Login</span>
@@ -61,12 +41,43 @@
         <div class="collapse navbar-toggleable-sm" id="navbar-1">
           <!-- link and dropdown -->
           <ul class="nav navbar-nav nav-active-border b-{{app.setting.theme.primary}}">
-            <li class="nav-item">
+           <li class="nav-item"></li>
+               <li class="nav-item "></li>
+                <!-- <li class="nav-item"></li>
+                 <li class="nav-item"></li>
+                  <li class="nav-item"></li>
+                   <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                     <li class="nav-item"></li> -->
+
+              <li class="nav-item dropdown padding-left">
+            <a class="nav-link" href data-toggle="dropdown">
+              <i class="material-icons">&#xe8b6;</i>
+            </a>
+            <div class="dropdown-menu text-color w-lg animated fadeInUp pull-right">
+              <!-- <div ui-include="'../views/blocks/navbar.form.html'"></div> -->
+                              <!-- search form -->
+                <form class="navbar-form form-inline navbar-item m-l v-m" role="search">
+                  <div class="form-group l-h m-a-0">
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control" placeholder="Search projects...">
+                      <span class="input-group-btn">
+                        <button type="submit" class="btn white b-a no-shadow"><i class="fa fa-search"></i></button>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+                <!-- / search form -->
+
+            </div>
+          </li>
+
+          <!--   <li class="nav-item">
               <a class="nav-link" href>
                 <span class="nav-text">Video</span> 
               </a>
-            </li>
-            <li class="nav-item">
+            </li> -->
+           <!--  <li class="nav-item">
               <a class="nav-link" href>
                 <span class="nav-text">Music</span> 
               </a>
@@ -85,7 +96,7 @@
               <a class="nav-link" href>
                 <span class="nav-text">Shop</span> 
               </a>
-            </li>
+            </li> -->
           </ul>
           <!-- / link and dropdown -->
         </div>
