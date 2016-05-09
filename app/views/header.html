@@ -21,6 +21,29 @@
 
         <!-- nabar right -->
         <ul class="nav navbar-nav pull-right">
+
+         <li class="nav-item dropdown padding-left">
+            <a class="nav-link" href data-toggle="dropdown">
+              <i class="material-icons">&#xe8b6;</i>
+            </a>
+            <div class="dropdown-menu text-color w-lg animated fadeInUp pull-right">
+              <!-- <div ui-include="'../views/blocks/navbar.form.html'"></div> -->
+                              <!-- search form -->
+                <form class="navbar-form form-inline navbar-item m-l v-m" role="search">
+                  <div class="form-group l-h m-a-0">
+                    <div class="input-group input-group-sm">
+                      <input type="text" class="form-control" placeholder="Search projects...">
+                      <span class="input-group-btn">
+                        <button type="submit" class="btn white b-a no-shadow"><i class="fa fa-search"></i></button>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+                <!-- / search form -->
+
+            </div>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" ui-fullscreen>
               <span><i class="material-icons">message</i></span> 
@@ -148,7 +171,7 @@
         <!-- navbar collapse -->
         <div class="collapse navbar-toggleable-sm" id="navbar-4" data-pjax>
             <!-- search form -->
-            <form class="navbar-form form-inline pull-right pull-none-sm navbar-item v-m" role="search">
+           <!--  <form class="navbar-form form-inline pull-right pull-none-sm navbar-item v-m" role="search">
               <div class="form-group l-h m-a-0">
                 <div class="input-group input-group-sm">
                   <input type="text" class="form-control p-x b-a rounded" placeholder="Search projects...">
@@ -157,7 +180,8 @@
                   </span>
                 </div>
               </div>
-            </form>
+            </form> -->
+
 
           <ul class="nav navbar-nav pull-left nav-active-border b-{{app.setting.theme.primary}}">
             <li class="nav-item">
