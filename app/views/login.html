@@ -17,15 +17,17 @@
 			  <header>
 			    <h1>Log In</h1>
 			    <p>Fill in all informations</p>
-			  </header>
-			  <form name = "my form" action="demo_form.asp" onsubmit = "return validateform()" method ="post" >
+			  </header> <!-- onsubmit = "return validateform()" -->
+			  <form name = "my form" action="#/dashboard"  method ="post" >
 			    <div class="input-section email-section">
 			      <input type="email" placeholder="ENTER YOUR NUMBER HERE" autocomplete="off" class="email"/>
 			      <div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="next-button email"><i class="fa fa-arrow-up"></i></span></div>
 			    </div>
 			    <div class="input-section password-section folded">
 			      <input type="password" placeholder="ENTER YOUR PASSWORD HERE" class="password"/>
-			      <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
+
+			      <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"> <!-- <input type="submit"> -->
+			      <a href="#/dashboard"><i class="fa fa-arrow-up"></i> </a></span></div>
 			    </div>
 			    
                  </form>
