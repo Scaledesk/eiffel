@@ -111,6 +111,11 @@ angular
   controller: 'MyNetworkCtrl',
   controllerAs: 'myNetwork'
 })
+.when('/dashboard', {
+  templateUrl: 'views/dashboard.html',
+  controller: 'DashboardCtrl',
+  controllerAs: 'dashboard'
+})
 .otherwise({
         redirectTo: '/'
       });
