@@ -62,7 +62,7 @@ body {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-.registration-form .input-section.folded {
+/*.registration-form .input-section.folded {
   width: 95%;
   margin-top: 10px;
   left: 50%;
@@ -89,7 +89,7 @@ body {
 }
 .registration-form .input-section.folded + .folded span {
   background-color: #e1bcef;
-}
+}*/
 .registration-form .input-section.fold-up {
   margin-top: -75px;
 }
