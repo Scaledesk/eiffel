@@ -16,20 +16,23 @@
 			<div class="registration-form">
 			  <header>
 			    <h1>Log In</h1>
-			    <p>Fill in all informations</p>
+			    <p>Fill in all informations</p>   <!-- <a href="">Forgot Password</a> -->
+			    <span  style="display: none;color:red"id="spanNum">your given number greater than 10</span>
 			  </header> <!-- onsubmit = "return validateform()" -->
 			  <form  id="myform" name = "my form" class="myform" action="#/"  method ="post" >
 			    <div class="input-section password-section folded">
 			      <input type="password" placeholder="ENTER YOUR PASSWORD HERE" class="password"/>
-
+                 
 			      <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"> <!-- <input type="submit"> -->
 			     <i class="fa fa-arrow-up"></i> </span></div>
 			    </div>
-
+                    
 			    <div class="input-section number-section">
-			      <input type="number" placeholder="ENTER YOUR NUMBER HERE" autocomplete="off" class="number"/>
+			      <input type="number" placeholder="ENTER YOUR NUMBER HERE" id="number" autocomplete="off" class="number"/>
+
 			      <div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="next-button number"><i class="fa fa-arrow-up"></i></span></div>
 			    </div>
+
 			    <!-- <div class="input-section password-section folded">
 			      <input type="password" placeholder="ENTER YOUR PASSWORD HERE" class="password"/>
 

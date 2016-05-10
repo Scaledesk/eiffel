@@ -18,17 +18,44 @@ $('.next-button').hover(
 $('.next-button.number').click(
   function(){
     /*alert(87878);*/
-    console.log("Something");
-    $('.number-section').addClass("fold-up");
-    $('.password-section').removeClass("folded");
+   /* console.log("Something");*/
+  
+  
+   
+
+          $('.number-section').addClass("fold-up");
+          $('.password-section').removeClass("folded");
+        
+
+
   }
 );
+   
 
  $('.number').keypress(function(e){
         if(e.which == 13){//Enter key pressed
           /*  alert(45555555);*/
             $('.next-button.number').click();//Trigger search button click event
         }
+    });
+
+
+ $('.number').keyup(function(){
+     /*   alert(45555555);*/
+
+            var num= $("#number").val();
+            var numlength= num.toString().length;
+          if(numlength<=10){
+            
+                 $("#spanNum").css("display", "none");
+                /* $('.next-button.number').click();*/
+
+             } else{
+           
+              $("#number").focus()
+             $("#spanNum").css("display", "inline");
+             }
+        
     });
 
 
@@ -54,6 +81,7 @@ $('.next-button.password').click(
   /*  alert(212);*/
    /* $('.password-section').addClass("fold-up");
     $('..success').removeClass("marginTop" , 0);*/
+
        $( "#myform" ).submit();
      /*return true;*/
   }
