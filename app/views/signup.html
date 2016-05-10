@@ -2,6 +2,7 @@
 <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
  --><link rel="stylesheet" href="styles/css/normalize.css">
 <link rel="stylesheet" href="styles/css/style.css">
+
  <div ng-include="'views/header1.html'"></div>
 
 <div class="padding login">
@@ -13,6 +14,9 @@
   <header>
     <h1>Sign Up</h1>
     <p>Fill in all informations</p>
+
+    <span  style="display: none;color:red"id="spanNum">your given number greater than 10</span>
+
   </header>
   <form><div class="input-section repeat-password-section folded">
       <input type="password" placeholder="ENTER OTP " class="repeat-password"/>
@@ -23,10 +27,10 @@
       <input type="password" placeholder="ENTER YOUR PASSWORD HERE" class="password"/>
       <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
     </div>
-    <div class="input-section email-section">
+    <div class="input-section number-section">
       
-      <input type="email" placeholder="ENTER YOUR NUMBER HERE" autocomplete="off" class="email"/>
-      <div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="next-button email"><i class="fa fa-arrow-up"></i></span></div>
+      <input type="number" placeholder="ENTER YOUR NUMBER HERE" id="number" autocomplete="off" class="number"/>
+      <div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="next-button number"><i class="fa fa-arrow-up"></i></span></div>
     </div>
     
     <div class="success">
