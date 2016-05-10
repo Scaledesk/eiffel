@@ -49,6 +49,12 @@ $('.next-button.number').click(
         
     });  
 
+ $('.back-up').click(function(){
+     $('.number-section').removeClass("fold-up");
+    $('.password-section').addClass ("folded");
+    });
+
+
 $('.password').on("change keyup paste",
   function(){
     if($(this).val()){

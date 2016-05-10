@@ -146,7 +146,7 @@ sup {
 
 .btn.b-success:hover, .btn.b-success:focus, .btn.success:hover, .btn.success:focus {
   color: rgba(255, 255, 255, 0.87) !important;
-  background-color: #6cc788; }
+  background-color: #f44455; }
 
 .btn.b-info:hover, .btn.b-info:focus, .btn.info:hover, .btn.info:focus {
   color: rgba(255, 255, 255, 0.87) !important;
