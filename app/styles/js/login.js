@@ -1,5 +1,5 @@
 
-$('.email').on("change keyup paste",
+$('.number').on("change keyup paste",
   function(){
     if($(this).val()){
       $('.icon-paper-plane').addClass("next");
@@ -15,13 +15,22 @@ $('.next-button').hover(
   }
 );
 
-$('.next-button.email').click(
+$('.next-button.number').click(
   function(){
+    /*alert(87878);*/
     console.log("Something");
-    $('.email-section').addClass("fold-up");
+    $('.number-section').addClass("fold-up");
     $('.password-section').removeClass("folded");
   }
 );
+
+ $('.number').keypress(function(e){
+        if(e.which == 13){//Enter key pressed
+          /*  alert(45555555);*/
+            $('.next-button.number').click();//Trigger search button click event
+        }
+    });
+
 
 $('.password').on("change keyup paste",
   function(){
@@ -41,11 +50,21 @@ $('.next-button').hover(
 
 $('.next-button.password').click(
   function(){
-    console.log("Something");
-    $('.password-section').addClass("fold-up");
-    $('..success').removeClass("marginTop" , 0);
+   /* console.log("Something");*/
+  /*  alert(212);*/
+   /* $('.password-section').addClass("fold-up");
+    $('..success').removeClass("marginTop" , 0);*/
+       $( "#myform" ).submit();
+     /*return true;*/
   }
 );
+
+$('.password').keypress(function(e){
+        if(e.which == 13){//Enter key pressed
+          /*  alert(45555555);*/
+            $('.next-button.password').click();//Trigger search button click event
+        }
+    });
 
 /*$('.repeat-password').on("change keyup paste",
   function(){

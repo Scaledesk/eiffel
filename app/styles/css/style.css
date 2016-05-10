@@ -11,7 +11,8 @@ body {
 }
 
 .registration-form {
-  width: 400px;
+  width: 500px;
+  height: 90%;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
@@ -24,7 +25,7 @@ body {
   z-index: 4;
   background: white;
   padding: 20px 40px;
-  border-radius: 15px 15px 0 0;
+  border-radius: 0 0 0 0;
 }
 .registration-form header h1 {
   font-weight: 900;
@@ -55,35 +56,46 @@ body {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   height: 75px;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 0px 0px;
   overflow: hidden;
   z-index: 2;
-  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);*/
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+
 .registration-form .input-section.folded {
-  width: 95%;
-  margin-top: 10px;
+  width: 100%;
+  /*position: absolute;*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  z-index: 1;
+  height: 75px;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  z-index: 2;
+  /*box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);*/
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
-.registration-form .input-section.folded input {
+/*.registration-form .input-section.folded input {
   background-color: #e9e2c0;
 }
 .registration-form .input-section.folded span {
   background-color: #e9e2c0;
-}
-.registration-form .input-section.folded + .folded {
+}*/
+/*.registration-form .input-section.folded + .folded {
   width: 90%;
   margin-top: 20px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   z-index: 0;
-}
+}*/
 .registration-form .input-section.folded + .folded input {
   background-color: #e1bcef;
 }
@@ -208,4 +220,9 @@ border-bottom-right-radius: 22px;
   padding-right: 15px;
   
 
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
