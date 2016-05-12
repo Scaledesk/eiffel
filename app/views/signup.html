@@ -1,9 +1,11 @@
 
 <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
  --><link rel="stylesheet" href="styles/css/normalize.css">
-<link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/mycustom.css">
 
- <div ng-include="'views/header1.html'"></div>
+
+      <div ng-include="'views/header1.html'"></div>
 
 <div class="padding login">
   <div class="row">
@@ -16,27 +18,34 @@
     <p>Fill in all informations</p>
 
     <span  style="display: none;color:red"id="spanNum">your given number greater than 10</span>
-     <span  class="back-up">Back</span>
+     
   </header>
-  <form><div class="input-section repeat-password-section folded">
+  <form> <div class="success">
+      <p>ACCOUNT CREATED</p><span class="label label-success sign">
+      Thankx for signup with us</span><br><br>
+  </div> 
+    <div class="input-section repeat-password-section folded"><i class="back-up pull-left back2 material-icons md-24">&nbsp; </i>
       <input type="password" placeholder="ENTER OTP " class="repeat-password"/>
-      <div class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button repeat-password">  <a href="#/login"><i class="fa fa-paper-plane"></i></a></span></div>
+      <div class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button repeat-password"> <i class="fa fa-paper-plane"></i></a></span></div>
     </div> 
 
-    <div class="input-section password-section folded">
-      <input type="password" placeholder="ENTER YOUR PASSWORD HERE" class="password"/>
+    <div class="input-section password-section folded"><i class="back-up pull-left back2 material-icons md-24">&nbsp; </i>
+      <input type="password"  placeholder="ENTER YOUR PASSWORD HERE" class="password"/>
       <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
     </div>
+
     <div class="input-section number-section">
-      
       <input type="number" placeholder="ENTER YOUR NUMBER HERE" id="number" autocomplete="off" class="number"/>
       <div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="next-button number"><i class="fa fa-arrow-up"></i></span></div>
     </div>
     
+
+
     <div class="success">
       <p>ACCOUNT CREATED</p><span class="label label-success sign">
       Thankx for signup with us</span><br><br>
   </div> 
+
   </form>
 
 
