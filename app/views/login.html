@@ -1,68 +1,46 @@
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'> -->
-
 <link rel="stylesheet" href="styles/css/normalize.css">
 <link rel="stylesheet" href="styles/css/style.css">
-
-
+<link rel="stylesheet" href="styles/css/mycustom.css">
 
 
  <div ng-include="'views/header1.html'"></div>
-
 <div class="padding login">
   <div class="row">
-      
+    
 
 
+                <!--  <div class="back"></div> -->
+      <div class="registration-form">
+            <form> <header>
+          <h1>Log In</h1>
+          <p>Fill in all informations</p>
+        </header> <!-- onsubmit = "return validateform()" -->
+        
+          
+          <div class="input-section password-section folded">
+            <i class="back-up pull-left back2 material-icons md-24">&nbsp; </i>
+            <input type="password" placeholder="ENTER YOUR PASSWORD HERE" class="password"/>
+           <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span>
+            <span class="next-button password"> <!-- <input type="submit"> -->
+            <a href="dashboard.html"><i class="fa fa-arrow-up"></i> </a></span></div></div>
+          
+          <div class="input-section number-section">
+      <input type="number" placeholder="ENTER YOUR NUMBER HERE" id="number" autocomplete="off" class="number"/>
+    <div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="next-button number"><i class="fa fa-arrow-up"></i></span></div>
+          </div>
+          <!-- <div class="input-section password-section folded">
+            <input type="password" placeholder="ENTER YOUR PASSWORD HERE" class="password"/>
 
-
-			               <!--  <div class="back"></div> -->
-<div class="registration-form">
-	<header>
-			    <h1>Log In</h1>
-			    <p>Fill in all informations</p>   <!-- <a href="">Forgot Password</a> -->
-<<<<<<< HEAD
-			   
-			    <!-- <span  style="display: none; " class="back-up">Back</span> -->
-			    <i class="material-icons back-up" style="display: none; ">arrow_back <br></i>
-			     <span  style="display: none;color:red"id="spanNum">your given number greater than 10</span>
-			  </header> <!-- onsubmit = "return validateform()" -->
-			  <form  id="myform" name = "my form" class="myform" action="#/"  method ="post" >
-			    <div class="input-section password-section folded">
-			      <input type="password" placeholder="ENTER YOUR PASSWORD HERE" class="password"/>
-                 
-			      <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"> <!-- <input type="submit"> -->
-			     <i class="fa fa-arrow-up"></i> </span></div>
-			    </div>
-=======
-			    <span  style="display: none;color:red"id="spanNum">your given number greater than 10</span>
-	</header> <!-- onsubmit = "return validateform()" -->
-	<form>
-			
-			<div class="input-section password-section folded"><i class="back-up pull-left back2 material-icons md-24">&nbsp; </i>
-			 <input type="password" placeholder="ENTER YOUR PASSWORD HERE" class="password"/>
-             <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="     next-button password"> <!-- <input type="submit"> -->
-			 <a href="dashboard.html"><i class="fa fa-arrow-up"></i> </a></span></div>
-			</div>
->>>>>>> a61ee3d2ac3254be5f8fbc7a938fdd9d67280dbd
-                    
-			<div class="input-section number-section">
-			  <input type="number" placeholder="ENTER YOUR NUMBER HERE" id="number" autocomplete="off" class="number"/>
-			   <div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="next-button number"><i class="fa fa-arrow-up"></i></span></div>
-			    </div>
-
-			    <!-- <div class="input-section password-section folded">
-			      <input type="password" placeholder="ENTER YOUR PASSWORD HERE" class="password"/>
-
-			      <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"> <input type="submit"> -->
-			    </form>
-			    </div> 
-			    
-               
-				<!-- </div> -->
-				
+            <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"> <!-- <input type="submit"> -->
+        
+          </div> 
+           </form>
+        </div>
+        
 </div>
-</div>
+
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="styles/js/login.js"></script>
