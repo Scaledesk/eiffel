@@ -18,3 +18,36 @@
       padding-left: 25px;
       padding-top: 24px
 }
+.tag{
+    padding-left: 0px;
+}
+.para{
+	margin-bottom: 1px;
+}
+.title{
+	font-size:22px;
+	font-weight: 500;
+	line-height: 25px;
+}
+.profile_img{
+	margin-left:6px;
+    max-width: 60px;
+    width: 60px;
+}
+ .date{
+	padding-left: 40px;
+	 margin-top: 5px;
+}
+.name{
+	padding-left: 40px;
+}
+.icon{
+	font-size:15px;
+}
+.padding_less{
+	padding:0px;
+}
+.profile{
+    margin-bottom: 0px;
+}
+
