@@ -21,7 +21,7 @@ $('.next-button.number').click(
    /* console.log("Something");*/
   
   
-   
+          $(".back-up").css("display", "inline");
 
           $('.number-section').addClass("fold-up");
           $('.password-section').removeClass("folded");
@@ -31,6 +31,11 @@ $('.next-button.number').click(
   }
 );
    
+$('.back-up').click(function(){
+     $('.number-section').removeClass("fold-up");
+    $('.password-section').addClass ("folded");
+    });
+
 
  $('.number').keypress(function(e){
         if(e.which == 13){//Enter key pressed
@@ -42,7 +47,7 @@ $('.next-button.number').click(
 
  $('.number').keyup(function(){
      /*   alert(45555555);*/
-
+            /* $(".back-up").css("display", "none");*/
             var num= $("#number").val();
             var numlength= num.toString().length;
           if(numlength<=10){

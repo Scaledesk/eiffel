@@ -10,7 +10,7 @@
  * Main module of the application.
  */
 angular
-  .module('eiffelApp', ['ngRoute'])
+  .module('eiffelApp', ['ngRoute','ngMaterial'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -115,6 +115,11 @@ angular
   templateUrl: 'views/dashboard.html',
   controller: 'DashboardCtrl',
   controllerAs: 'dashboard'
+})
+.when('/money-get-details', {
+  templateUrl: 'views/money-get-details.html',
+  controller: 'MoneyGetDetailsCtrl',
+  controllerAs: 'moneyGetDetails'
 })
 .otherwise({
         redirectTo: '/'

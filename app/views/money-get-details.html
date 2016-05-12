@@ -1,0 +1,132 @@
+
+<div ng-include="'views/header.html'"></div>
+
+<div class="body-inner-padding money">
+
+   <div class="col-md-6">
+     <div class="box">
+       <div class="box-header">
+         <h2>Money</h2>
+
+       </div>
+       <div class="box-divider m-a-0"></div>
+       <div class="box-body">
+         <form role="form" ng-submit="submit()" ng-controller="MoneyGetDetailsCtrl" ng-cloak>
+           <div class="form-group row">
+            <!-- <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>-->
+             <div class="col-sm-10">
+
+               <md-radio-group ng-model="data.group">
+                    <div class="col-sm-6">
+                   <md-radio-button value="Required" class="md-primary">Required</md-radio-button>
+                   </div>
+                 <div class="col-sm-6">
+                 <md-radio-button value="Offered" class="md-primary"> Offered </md-radio-button>
+                     </div>
+               </md-radio-group>
+              <!-- <input type="email" class="form-control" id="inputEmail3" placeholder="Email">-->
+             </div>
+           </div>
+           <div class="form-group row">
+
+             <label for="title" class="col-sm-2 form-control-label">Title</label>
+
+
+               <md-input-container>
+                 <label>Title</label>
+                 <input  name="title" type="text">
+               </md-input-container>
+
+
+              <!-- <input type="password" class="form-control" id="inputPassword3" placeholder="Password">-->
+
+           </div>
+           <div class="form-group row">
+             <label for="amount" class="col-sm-2 form-control-label">Amount</label>
+
+               <md-input-container>
+                 <label>Amount</label>
+                 <input  type="text" name="amount">
+               </md-input-container>
+              <!-- <input type="file" class="form-control">-->
+
+           </div>
+
+           <div class="form-group row">
+             <label for="rate" class="col-sm-2 form-control-label">Rate of Return</label>
+
+               <md-input-container>
+                 <label>Rate of Return</label>
+                 <input  type="text" name="rate-of-return">
+               </md-input-container>
+               <!-- <input type="file" class="form-control">-->
+
+           </div>
+           <div class="form-group row">
+             <label for="Blank" class="col-sm-2 form-control-label"> Blank</label>
+
+               <md-input-container>
+                 <label>Blank</label>
+                 <input  type="text" name="Blank">
+               </md-input-container>
+               <!-- <input type="file" class="form-control">-->
+
+           </div>
+
+           <div class="form-group row">
+             <label for="Blank" class="col-sm-2 form-control-label">Blank</label>
+
+               <md-input-container>
+                 <label>Blank</label>
+                 <input  type="text" name="Blank">
+               </md-input-container>
+               <!-- <input type="file" class="form-control">-->
+
+           </div>
+           <div class="form-group row">
+             <label for="Invest Against" class="col-sm-2 form-control-label">Invest Against</label>
+
+               <md-input-container>
+                 <label>Invest Against</label>
+                 <input  type="text" name="Invest-Against">
+               </md-input-container>
+               <!-- <input type="file" class="form-control">-->
+
+           </div>
+           <div class="form-group row">
+             <label for="Location" class="col-sm-2 form-control-label">Location</label>
+
+               <md-input-container>
+                 <label>Location</label>
+                 <input  type="text" name="Location">
+               </md-input-container>
+               <!-- <input type="file" class="form-control">-->
+
+           </div>
+
+           <div class="form-group row">
+           <label for="Description" class="col-sm-2 form-control-label">Description</label>
+
+             <md-input-container>
+               <label>Description</label>
+               <input  type="text" name="Description">
+             </md-input-container>
+             <!-- <input type="file" class="form-control">-->
+
+         </div>
+           <div class="form-group row">
+           <md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
+           </md-checkbox>
+             </div>
+           <div class="form-group row m-t-md">
+             <div class="col-sm-offset-2 col-sm-10">
+              <!-- <button type="submit" class="btn white">Sign in</button>-->
+             </div>
+           </div>
+         </form>
+       </div>
+     </div>
+   </div>
+
+ </div>
+

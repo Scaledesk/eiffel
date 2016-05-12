@@ -17,6 +17,7 @@ $('.next-button').hover(
 $('.next-button.number').click(
   function(){
     console.log("Something");
+         $(".back-up").css("display", "inline");
     $('.number-section').addClass("fold-up");
     $('.password-section').removeClass("folded");
   }
