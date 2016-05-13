@@ -64,11 +64,23 @@ $('.repeat-password').on("change keyup paste",
 
 $('.next-button.repeat-password').click(
   function(){
-    console.log("Something");
+    console.log("Something miomomoijoijio");
     $('.repeat-password-section').addClass("fold-up");
     $('.success').css("marginTop", 0);
   }
 );
+
+$('.repeat-password').keypress(function(e){
+    if(e.which == 13){//Enter key pressed
+        
+       /* console.log("nitesh enter");*/
+
+        $('.next-button.repeat-password').click();//Trigger search button click event
+    }
+});
+
+
+
  $('.number').keypress(function(e){
         if(e.which == 13){//Enter key pressed
           /*  alert(45555555);*/
