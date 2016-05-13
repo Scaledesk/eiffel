@@ -4,8 +4,6 @@
 }
 .plus_icon{
 	font-size: 45px;
-
-
 }
 .my_icon{
 	padding: 20px;
@@ -18,13 +16,13 @@
       padding-left: 25px;
       padding-top: 24px
 }
-.tag{
+.eff_tag{
     padding-left: 0px;
 }
-.para{
+.eff_para{
 	margin-bottom: 1px;
 }
-.title{
+.eff_title{
 	font-size:22px;
 	font-weight: 500;
 	line-height: 25px;
@@ -34,27 +32,23 @@
     max-width: 60px;
     width: 60px;
 }
- .date{
+.eff_date{
 	padding-left: 40px;
 	 margin-top: 5px;
 }
-.name{
+.eff_name{
 	padding-left: 40px;
+	margin-bottom: 0px;
 }
-
-.icon{
-	font-size:15px;
+.eff_icon{
+	font-size: 16px;
 }
-
-.padding_less{
-	padding:0px;
-}
-.profile{
+.eff_profile{
     margin-bottom: 0px;
 }
 
 .eiff_cat{
-	
+
 	    font-style: normal;
 	    font-size: 10px;
 }
