@@ -8,7 +8,7 @@
  * Controller of the eiffelApp
  */
 angular.module('eiffelApp')
-  .controller('LoginCtrl', function ($scope) {
+  .controller('LoginCtrl', function ($scope,$rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -18,5 +18,6 @@ angular.module('eiffelApp')
       $scope.example = {
         value: 12
     }
-      $scope.headerShow="dashboard";
+      // $scope.headerShow="dashboard";
+      $rootScope.headerShow = "dashboard";
   });

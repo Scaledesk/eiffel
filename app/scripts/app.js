@@ -124,6 +124,9 @@ angular
 .otherwise({
         redirectTo: '/'
       });
-  });
+
+  }).run(function($rootScope) {
+  $rootScope.headerShow = "login";
+});
   
 
