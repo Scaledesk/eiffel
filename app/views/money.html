@@ -97,22 +97,22 @@
          <img src="../assets/images/a0.jpg" class="img-circle profile_img"></div>
         <div class="sl-date eff_date text-muted">2 minutes ago</div>
         <div class="sl-author eff_name">
-         <a href>Peter Joo</a>
+         <a class="eiff_text" href="">Peter Joo</a>
         </div>
         <div class="sl-author eff_name">
-        <i class="material-icons eff_icon"></i><span>Noida</span></div>
+        <i class="material-icons "style="font-size: 15px;"></i><span>Noida</span></div>
        </div>
        <div class="col-md-8">
         <div class="row">
-         <div class="">
-          <p class="eff_title">Title for post lorem ipsum sodales nisi nec condimentum.</p>
+         <div class="eiff_text">
+          <p class="eff_title ">Title for post lorem ipsum sodales nisi nec condimentum.</p>
          </div>
         </div>
        </div>
       </div>
 
       <div class="row container">
-       <p>Consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis
+       <p class="eiff_text">Consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis
         ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum.
         Mauris convallis mauris at pellentesque volutpat. Phasellus at ultricies neque,
         quis malesuada augue. Donec eleifend...<a href="#">Read More</a><br>
@@ -240,58 +240,251 @@
      </div>
     </div>
 
-    <div class="col-sm-6 col-md-3">
-     <div class="box">
-      <div class="box-header primary">
-       <h4>FEEDS</h4>
-      </div>
-      <div class="list-group no-radius no-borders">
-       <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis">
+    <!-- new sidebar -->
 
-        <span>Newest </span>
-       </a>
-       <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis">
+      <div class="col-md-6 col-lg-3">
+       <div class="navside white r box-shadow-z0 m-b">
+        <div class="navbar ng-scope">
+         <!-- brand -->
+         <a class="navbar-brand ng-scope">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24">
+           <path d="M 4 4 L 44 4 L 44 44 Z" fill="#009688"></path>
+           <path d="M 4 4 L 34 4 L 24 24 Z" fill="rgba(0,0,0,0.15)"></path>
+           <path d="M 4 4 L 24 4 L 4  44 Z" fill="#6cc788"></path>
+          </svg>
+          <img src="../assets/images/logo.png" alt="." class="hide">
+	<span class="hidden-folded inline v-m ng-binding">
+		Flatkit
+		<span class="text-xs text-muted _300 block m-t-xs tagline">awesome uikit</span>
+	</span>
+         </a>
+         <!-- / brand -->
+        </div>
+        <div flex-no-shrink="" class="ng-scope">
+         <div class="nav-fold ng-scope">
+          <a href="#/app/page/profile" ui-sref="app.page.profile">
+    <span class="pull-right m-v-sm hidden-folded">
+      <b class="label warn">9</b>
+    </span>
+    <span class="pull-left">
+      <img src="../assets/images/a1.jpg" alt="..." class="w-40 img-circle">
+    </span>
+    <span class="clear hidden-folded p-x">
+      <span class="block _500">Jack Perez</span>
+      <small class="block text-muted">London, UK</small>
+    </span>
+          </a>
+         </div>
+        </div>
+        <div class="nav-border b-success" flex="">
+         <ul class="nav ng-scope" ui-nav="">
+          <li class="nav-header hidden-folded">
+           <span class="text-xs text-muted">Header</span>
+          </li>
 
-        <span>Popular</span>
-       </a>
-       <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis">
+          <li>
+           <a>
+      <span class="nav-icon">
+        <i class="material-icons">
+          play_circle_outline
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+	<polygon points="20,33 32,24 20,15 " fill="#6cc788"></polygon>
+</svg>
+        </i>
+      </span>
+            <span class="nav-text">Video</span>
+           </a>
+          </li>
+          <li class="">
+           <a>
+      <span class="nav-caret text-muted">
+        <i class="fa fa-caret-down"></i>
+      </span>
+            <i class="nav-label"><b class="label label-sm no-bg">6</b></i>
+      <span class="nav-icon">
+        <i class="material-icons">
+          queue_music
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+	<path d="M34,12v16.37C33.37,28.141,32.71,28,32,28c-3.311,0-6,2.689-6,6s2.689,6,6,6s6-2.689,6-6V16h6v-4H34z" fill="#6cc788"></path>
+</svg>
+        </i>
+      </span>
+            <span class="nav-text">Music</span>
+           </a>
+           <ul class="nav-sub">
+            <li>
+             <a><span class="nav-text">Action</span></a>
+            </li>
+            <li>
+             <a><span class="nav-text">Another action</span></a>
+            </li>
+            <li>
+             <a>
+        	<span class="nav-caret text-muted">
+	          <i class="fa fa-caret-down"></i>
+	        </span>
+              <span class="nav-text">Action with sub</span>
+             </a>
+             <ul class="nav-sub">
+              <li>
+               <a><span class="nav-text">Action</span></a>
+              </li>
+              <li>
+               <a>
+          	<span class="nav-caret text-muted">
+		          <i class="fa fa-caret-down"></i>
+		        </span>
+                <span class="nav-text">Another action</span>
+               </a>
+               <ul class="nav-sub">
+                <li>
+                 <a><span class="nav-text">Action</span></a>
+                </li>
+                <li>
+                 <a><span class="nav-text">Another action</span></a>
+                </li>
+               </ul>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a>
+      <span class="nav-icon">
+        <i class="material-icons">
+          crop_original
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+	<polygon points="27.93,24.57 22.43,31.65 18.5,26.93 13,34 35,34 " fill="#6cc788"></polygon>
+</svg>
+        </i>
+      </span>
+            <span class="nav-text">Photo</span>
+           </a>
+          </li>
+          <li>
+           <a>
+      <span class="nav-icon">
+        <i class="material-icons">
+          subject
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+	<rect x="8" y="34" width="20" height="4" fill="#6cc788"></rect>
+	<rect x="8" y="18" width="32" height="4" fill="#6cc788"></rect>
+</svg>
+        </i>
+      </span>
+            <i class="nav-label"><b class="label label-sm success">2</b></i>
+            <span class="nav-text">Blog</span>
+           </a>
+          </li>
+          <li>
+           <a>
+            <i class="nav-label hidden-folded"><b class="label label-xs no-bg b-a">NEW</b></i>
+      <span class="nav-icon">
+        <i class="material-icons">
+          card_travel
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+	<rect x="8" y="28" width="32" height="6" fill="#6cc788"></rect>
+</svg>
+        </i>
+      </span>
+            <span class="nav-text">Shop</span>
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div flex-no-shrink="" class="ng-scope">
+         <nav ui-nav="" class="ng-scope">
+          <ul class="nav">
+           <li><div class="b-b b m-v-sm"></div></li>
+           <li class="no-bg">
+            <a class="auto">
+      	<span class="nav-icon">
+          <i class="material-icons inline"></i>
+          <i class="material-icons text-warn none"></i>
+        </span>
+             <span class="nav-text">Filter</span>
+            </a>
+           </li>
+           <li class="no-bg">
+            <a>
+        <span class="nav-icon">
+          <i class="material-icons"></i>
+        </span>
+        <span class="nav-text">
+          Star<small class="block text-muted">Border</small>
+        </span>
+            </a>
+           </li>
+           <li><div class="b-b b m-t-sm"></div></li>
+           <li class="no-bg">
+            <a>
+        <span class="nav-icon">
+      	 <i class="material-icons"></i>
+        </span>
+             <span class="nav-text">Logout</span>
+            </a>
+           </li>
+          </ul>
+         </nav>
+        </div>
+       </div>
+      </div>
+      <!--END SIDEBAR-->
+    </div>
+    <!--<div class="col-sm-6 col-md-3">-->
+     <!--<div class="box">-->
+      <!--<div class="box-header primary">-->
+       <!--<h4>FEEDS</h4>-->
+      <!--</div>-->
+      <!--<div class="list-group no-radius no-borders">-->
+       <!--<a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis">-->
 
-        <span>Old</span>
-       </a>
+        <!--<span>Newest </span>-->
+       <!--</a>-->
+       <!--<a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis">-->
 
-      </div>
-     </div>
+        <!--<span>Popular</span>-->
+       <!--</a>-->
+       <!--<a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis">-->
 
-     <div class="box light lt p-a-lg light1">
-      <div class="box-header primary">
-       <h4>MY NETWORKS</h4>
-      </div>
-      <div class="list-group no-radius no-borders">
+        <!--<span>Old</span>-->
+       <!--</a>-->
 
-       <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="material-icons">people</i></span> <span>My connection</span></a>
-       <a data-toggle="modal" data-target="#chat" data-dismiss="modal" class="list-group-item text-ellipsis"> <!-- <img src="../assets/images/a4.jpg" class="w-24 m-r-sm img-circle"> --><span class="w-24 m-r-sm img-circle"><i class="material-icons">person_add</i></span> <span>Add Contacts</span></a>
-       <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-user" aria-hidden="true"></i></span><span>People You May Know</span></a>
-      </div>
-     </div>
-     <div class="box light lt p-a-lg light1">
-      <div class="box-header primary">
-       <h4>INTEREST</h4>
-      </div>
-      <div class="list-group no-radius no-borders">
-       <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="material-icons">location_city</i></span>Companies</a>
-       <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-users" aria-hidden="true"></i></span>Groups</a>
-       <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-plus" aria-hidden="true"></i></span>More</a>
-      </div>
-     </div>
+      <!--</div>-->
+     <!--</div>-->
 
-     <div class="box light lt p-a-lg text-center light1">
-      <div class="box-header primary">
-       <h4>ADD FEEDS</h4>
-      </div>
-      <div class="my_icon">
-       <a><i class="material-icons plus_icon ">add_circle</i></a>
-      </div>
-     </div>
+     <!--<div class="box light lt p-a-lg light1">-->
+      <!--<div class="box-header primary">-->
+       <!--<h4>MY NETWORKS</h4>-->
+      <!--</div>-->
+      <!--<div class="list-group no-radius no-borders">-->
+
+       <!--<a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="material-icons">people</i></span> <span>My connection</span></a>-->
+       <!--<a data-toggle="modal" data-target="#chat" data-dismiss="modal" class="list-group-item text-ellipsis"> &lt;!&ndash; <img src="../assets/images/a4.jpg" class="w-24 m-r-sm img-circle"> &ndash;&gt;<span class="w-24 m-r-sm img-circle"><i class="material-icons">person_add</i></span> <span>Add Contacts</span></a>-->
+       <!--<a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-user" aria-hidden="true"></i></span><span>People You May Know</span></a>-->
+      <!--</div>-->
+     <!--</div>-->
+     <!--<div class="box light lt p-a-lg light1">-->
+      <!--<div class="box-header primary">-->
+       <!--<h4>INTEREST</h4>-->
+      <!--</div>-->
+      <!--<div class="list-group no-radius no-borders">-->
+       <!--<a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="material-icons">location_city</i></span>Companies</a>-->
+       <!--<a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-users" aria-hidden="true"></i></span>Groups</a>-->
+       <!--<a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-plus" aria-hidden="true"></i></span>More</a>-->
+      <!--</div>-->
+     <!--</div>-->
+
+     <!--<div class="box light lt p-a-lg text-center light1">-->
+      <!--<div class="box-header primary">-->
+       <!--<h4>ADD FEEDS</h4>-->
+      <!--</div>-->
+      <!--<div class="my_icon">-->
+       <!--<a><i class="material-icons plus_icon ">add_circle</i></a>-->
+      <!--</div>-->
+     <!--</div>-->
+    <!--</div>-->
     </div>
    </div>
   </div>
