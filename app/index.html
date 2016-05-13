@@ -44,10 +44,19 @@
   <!-- build:css ../assets/styles/app.min.css -->
   <!-- endbuild -->
   </head>
-  <body ng-app="eiffelApp"> 
+  <body ng-app="eiffelApp">
 
-  
-     <div ng-view="" class="app-body " id="view"></div>
+
+  <div ng-if="headerShow == 'login'">
+      <div ng-include="'views/header1.html'"></div>
+  </div>
+
+
+  <div ng-if="headerShow == 'dashboard'">
+      <div ng-include="'views/header.html'"></div>
+  </div>
+  {{headerShow}}
+  <div ng-view="" class="app-body " id="view"></div>
   <div ng-include="'views/footer.html'"></div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>

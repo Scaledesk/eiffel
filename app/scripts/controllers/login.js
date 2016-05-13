@@ -15,8 +15,8 @@ angular.module('eiffelApp')
       'Karma'
     ];
 
-     $scope.example = {
+      $scope.example = {
         value: 12
     }
-    
+      $scope.headerShow="dashboard";
   });
