@@ -8,16 +8,24 @@
  * Controller of the eiffelApp
  */
 angular.module('eiffelApp')
-  .controller('LoginCtrl', function ($scope,$rootScope) {
+  .controller('LoginCtrl', function ($scope,$rootScope,$location) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-      $scope.example = {
+     /* $scope.example = {
         value: 12
-    }
-      // $scope.headerShow="dashboard";
-      $rootScope.headerShow = "dashboard";
+    }*/
+      $rootScope.headerShow = "login";
+
+      $scope.loginSubmit =function() {
+          // $scope.headerShow="dashboard";
+       //alert(567981);
+              /*  console.log('dbhsvhdcgvshdcgsdc');*/
+          $location.path('/dashboard/');
+          /*window.location('#/dashboard');*/
+      }
+
   });
