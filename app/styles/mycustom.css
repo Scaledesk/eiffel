@@ -63,10 +63,10 @@
   text-align: right;
    color: #9999f8;
 }
-
 .arl {
 
     margin-top: 180px;
+  /*  margin-right: 90px;*/
   text-align: right;
    color: #9999f8;
 }
@@ -79,7 +79,9 @@
     /* For mobile phones: */
    @media screen and (max-width: 680px) and (min-width: 320px) {
    	.eiff_registration-form {
-        width: 70%!important;
+        width: 70%!important;}
+        .arl{
+        margin-right: 90px;
         
     }
 
