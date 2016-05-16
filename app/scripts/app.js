@@ -10,7 +10,7 @@
  * Main module of the application.
  */
 angular
-  .module('eiffelApp', ['ngRoute','ngMaterial'])
+  .module('eiffelApp', ['ngRoute','ngMaterial','ngTagsInput'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -120,6 +120,11 @@ angular
   templateUrl: 'views/money-get-details.html',
   controller: 'MoneyGetDetailsCtrl',
   controllerAs: 'moneyGetDetails'
+})
+.when('/property-get-details', {
+  templateUrl: 'views/property-get-details.html',
+  controller: 'PropertyGetDetailsCtrl',
+  controllerAs: 'propertyGetDetails'
 })
 .otherwise({
         redirectTo: '/'

@@ -72,7 +72,7 @@ $('.next-button.repeat-password').click(
 
 $('.repeat-password').keypress(function(e){
     if(e.which == 13){//Enter key pressed
-        
+
        /* console.log("nitesh enter");*/
 
         $('.next-button.repeat-password').click();//Trigger search button click event
@@ -95,17 +95,17 @@ $('.repeat-password').keypress(function(e){
             var num= $("#number").val();
             var numlength= num.toString().length;
           if(numlength<=10){
-            
+
                  $("#spanNum").css("display", "none");
                 /* $('.next-button.number').click();*/
 
              } else{
-           
+
               $("#number").focus()
              $("#spanNum").css("display", "inline");
              }
-        
-    });  
+
+    });
 
  $('.back-up').click(function(){
      $('.number-section').removeClass("fold-up");
