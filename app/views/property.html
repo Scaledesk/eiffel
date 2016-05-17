@@ -34,6 +34,7 @@
        </div>
       </div><hr>
       <!--carousel starting-->
+<<<<<<< Updated upstream
       <section id="features"  ng-init="index=1">
        <div class="content">
 
@@ -45,6 +46,39 @@
         </slick>
 
         <br>
+=======
+      <div class="box">
+       <div class="box-header">
+        <h4>Carousel</h4>
+       </div>
+       <div>
+        <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+         <uib-slide ng-repeat="slide in slides" active="slide.active">
+          <img ng-src="{{slide.image}}" style="margin:auto;" class="w-full">
+          <div class="carousel-caption">
+           <h6>Slide {{$index}}</h6>
+           <p>{{slide.text}}</p>
+          </div>
+         </uib-slide>
+        </uib-carousel>
+       </div>
+       <div class="box-body">
+        <div class="row">
+         <div class="col-md-6">
+          <button type="button" class="btn white m-b" ng-click="addSlide()">Add Slide</button>
+          <div class="checkbox">
+           <label>
+            <input type="checkbox" ng-model="noWrapSlides">
+            Disable Slide Looping
+           </label>
+          </div>
+         </div>
+         <div class="col-md-6">
+          Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
+          <br />Enter a negative number or 0 to stop the interval.
+         </div>
+        </div>
+>>>>>>> Stashed changes
        </div>
       </section>
       <!--carousel end-->

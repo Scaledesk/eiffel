@@ -1,0 +1,241 @@
+<!--
+
+    <div class="padding">
+        <div class="row">
+            <div class="col-sm-12 col-md-push-3 col-md-6">
+
+
+                <md-radio-group ng-model="data.group">
+                    <div class="col-sm-6">
+                        <md-radio-button value="Required" class="md-primary">Required</md-radio-button>
+                    </div>
+                    <div class="col-sm-6">
+                        <md-radio-button value="Offered" class="md-primary"> Offered </md-radio-button>
+                    </div>
+                </md-radio-group>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+-->
+<div class="body-inner-padding money">
+<div class="col-sm-12 col-md-push-3 col-md-6">
+    <div class="box">
+        <div class="box-header">
+            <h2>Property</h2>
+
+        </div>
+        <div class="box-divider m-a-0"></div>
+        <div class="box-body">
+            <form role="form" ng-submit="submit()" ng-controller="PropertyGetDetailsCtrl" ng-cloak>
+                <div class="form-group row">
+                    <!-- <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>-->
+                    <div class="col-sm-10">
+
+                        <md-radio-group ng-model="data.group">
+                            <div class="col-sm-6">
+                                <md-radio-button value="Required" class="md-primary">Required</md-radio-button>
+                            </div>
+                            <div class="col-sm-6">
+                                <md-radio-button value="Offered" class="md-primary"> Offered </md-radio-button>
+                            </div>
+                        </md-radio-group>
+                        <!-- <input type="email" class="form-control" id="inputEmail3" placeholder="Email">-->
+                    </div>
+                </div>
+                <div class="eiff_form_ele1 form-group row">
+
+                    <label for="title" class="eiff_form_ele col-sm-2 form-control-label">Title</label>
+
+                    <div class="eiffbtn1">
+                        <md-input-container >
+                            <label>Title</label>
+                            <input  name="title"  type="text">
+                        </md-input-container>
+                    </div>
+
+                    <!-- <input type="password" class="form-control" id="inputPassword3" placeholder="Password">-->
+
+                </div>
+                <div class="eiff_form_ele1  form-group row">
+                    <label for="amount" class="eiff_form_ele col-sm-2 form-control-label">Description</label>
+
+                    <md-input-container>
+                        <label>Description</label>
+                        <input  type="text" name="description">
+                    </md-input-container>
+                    <!-- <input type="file" class="form-control">-->
+
+                </div>
+
+                <div class="eiff_form_ele1 form-group row">
+                    <label for="rate" class="eiff_form_ele col-sm-2 form-control-label">Rent or Lease</label>
+
+                    <md-input-container>
+                        <label>Rent or Lease</label>
+                        <input  type="text" name="rent-or-lease">
+                    </md-input-container>
+                    <!-- <input type="file" class="form-control">-->
+
+                </div >
+                <div class="eiff_form_ele1 form-group row">
+                    <label for="Duration" class="eiff_form_ele col-sm-2 form-control-label"> Duration</label>
+
+                    <md-input-container>
+                        <label>Duration</label>
+                        <input  type="Duration" name="Duration">
+                    </md-input-container>
+                    <!-- <input type="file" class="form-control">-->
+
+                </div>
+
+                <div class="eiff_form_ele1 form-group row">
+                    <label for="Type of Property " class="eiff_form_ele  form-control-label">Type of Property :</label>
+
+                    <tags-input ng-model="tags">
+                        <auto-complete source="loadTags($query)"></auto-complete>
+                    </tags-input>
+                </div>
+
+
+
+                <div class="form-group row m-t-md">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="eiffbtn btn white ">Sign in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div><div class="col-sm-6 col-md-pull-6 col-md-3">
+    <div class="box">
+        <div class="box-tool">
+            <ul class="nav">
+                <li class="nav-item inline dropdown">
+                    <a class="nav-link text-muted" data-toggle="dropdown">
+                        <i class="material-icons md-18">&#xe164;</i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-scale pull-right dark">
+                        <a class="dropdown-item" href>Activities</a>
+                        <a class="dropdown-item" href>Feed</a>
+                        <a class="dropdown-item" href>Photo</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">Follow</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="p-a-md text-center">
+            <p><img src="../assets/images/a1.jpg" class="img-circle w-xs"></p>
+            <a href class="text-md block">Jason Warren</a>
+            <p><small>London, UK</small></p>
+            <div>
+                <a href="" class="btn btn-icon btn-social rounded white btn-sm">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-facebook indigo"></i>
+                </a>
+                <a href="" class="btn btn-icon btn-social rounded white btn-sm">
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-twitter light-blue"></i>
+                </a>
+                <a href="" class="btn btn-icon btn-social rounded white btn-sm">
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-google-plus red"></i>
+                </a>
+            </div>
+            <div class="text-center m-t">
+                <a href class="btn btn-sm rounded primary w-sm m-y-xs">Follow</a>
+                <a href class="btn btn-sm rounded btn-outline b-primary w-sm">Invite</a>
+            </div>
+        </div>
+        <div class="row no-gutter b-t b-b"> <div class="col-xs-6 b-r">
+            <a class="p-a block text-center">
+                <span class="block _600">3219</span>
+                <span>Friends</span>
+            </a>
+        </div>
+            <div class="col-xs-6">
+                <a class="p-a block text-center">
+                    <span class="block _600">1458</span>
+                    <span>Followers</span>
+                </a>
+            </div>
+        </div>
+        <div class="p-a">
+            <a href class="text-ellipsis"><i class="fa fa-link text-muted m-r-sm"></i> apack.com/subdomain</a>
+            <a href class="text-ellipsis"><i class="fa fa-globe text-muted m-r-sm"></i> yourdomain.com</a>
+        </div>
+    </div>
+    <div class="box light lt">
+        <div class="box-body">
+            <span class="pie_chart"><img width="270" height="202" src="../assets/images/chart2.png"></span>
+            <span><p> Profile 20% completed</p></span>
+
+            <div class="clear p-a-xs">
+
+                <a href class="btn btn-sm btn-rounded white m-t-xs text-center"> Edit Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-6 col-md-3">
+    <div class="box">
+        <div class="box-header primary">
+            <h4>FEEDS</h4>
+        </div>
+        <div class="list-group no-radius no-borders">
+            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis">
+
+                <span>Newest </span>
+            </a>
+            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis">
+
+                <span>Popular</span>
+            </a>
+            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis">
+
+                <span>Old</span>
+            </a>  </div>
+    </div>
+
+    <div class="box light lt p-a-lg light1">
+        <div class="box-header primary">
+            <h4>MY NETWORKS</h4>
+        </div>
+        <div class="list-group no-radius no-borders">
+
+            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="material-icons">people</i></span> <span>My connection</span></a>
+            <a data-toggle="modal" data-target="#chat" data-dismiss="modal" class="list-group-item text-ellipsis"> <!-- <img src="../assets/images/a4.jpg" class="w-24 m-r-sm img-circle"> --><span class="w-24 m-r-sm img-circle"><i class="material-icons">person_add</i></span> <span>Add Contacts</span></a>
+            <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-user" aria-hidden="true"></i></span><span>People You May Know</span></a>
+        </div>
+    </div>
+    <div class="box light lt p-a-lg light1">
+        <div class="box-header primary">
+            <h4>INTEREST</h4>
+        </div> <div class="list-group no-radius no-borders">
+        <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="material-icons">location_city</i></span>Companies</a>
+        <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-users" aria-hidden="true"></i></span>Groups</a>
+        <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-plus" aria-hidden="true"></i></span>More</a>
+    </div>
+    </div>
+
+    <div class="box light lt p-a-lg text-center light1">
+        <div class="box-header primary">
+            <h4>ADD FEEDS</h4>
+        </div>
+        <div class="my_icon">
+            <a><i class="material-icons plus_icon ">add_circle</i></a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</div>
+
+
