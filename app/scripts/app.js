@@ -10,7 +10,7 @@
  * Main module of the application.
  */
 angular
-  .module('eiffelApp', ['ngRoute','ngMaterial'])
+  .module('eiffelApp', ['ngRoute','ngMaterial','ui.bootstrap','ngAnimate','ngTouch','slick'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -18,7 +18,6 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-     
 
 .when('/login', {
   templateUrl: 'views/login.html',
@@ -128,5 +127,5 @@ angular
   }).run(function($rootScope) {
   $rootScope.headerShow = "login";
 });
-  
+
 
