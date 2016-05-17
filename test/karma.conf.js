@@ -31,16 +31,13 @@ module.exports = function(config) {
       'bower_components/angular-aria/angular-aria.js',
       'bower_components/angular-messages/angular-messages.js',
       'bower_components/angular-material/angular-material.js',
-<<<<<<< Updated upstream
       'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/slick-carousel/slick/slick.min.js',
       'bower_components/angular-slick/dist/slick.js',
-=======
       'bower_components/ng-tags-input/ng-tags-input.min.js',
       'bower_components/angular-ui-select/dist/select.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
->>>>>>> Stashed changes
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

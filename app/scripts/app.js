@@ -40,6 +40,11 @@ angular
   controller: 'PropertyCtrl',
   controllerAs: 'property'
 })
+        .when('/property-get-details', {
+          templateUrl: 'views/property-get-details.html',
+          controller: 'PropertyGetDetailsCtrl',
+          controllerAs: 'property-get-details'
+        })    
 .when('/service', {
   templateUrl: 'views/service.html',
   controller: 'ServiceCtrl',
@@ -127,11 +132,11 @@ angular
   })
     .run(function($rootScope) {
   $rootScope.headerShow = "login";
-<<<<<<< Updated upstream
+
 });
 
-=======
-})
+
+
  /*   .require.config({
   paths: {
     'angular': 'bower_components/angular/angular',
@@ -140,7 +145,7 @@ angular
   shim: {
     'angular-ui-select': ['angular']
   }
-})*/;
+})*/
   
->>>>>>> Stashed changes
+
 
