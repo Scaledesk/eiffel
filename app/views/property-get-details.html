@@ -96,16 +96,33 @@
                 <div class="eiff_form_ele1 form-group row">
                     <label for="Type of Property " class="eiff_form_ele  form-control-label">Type of Property :</label>
 
-                    <tags-input ng-model="tags">
-                        <auto-complete source="loadTags($query)"></auto-complete>
-                    </tags-input>
+
+                    <div ng-controller='PropertyGetDetailsCtrl as vm'>
+
+                        <md-chips ng-model="vm.selectedPros" md-autocomplete-snap="" md-transform chip="vm.transformChip($chip)" md-require-match=''>
+                            <md-autocomplete md-selected-item='vm.selectedItem'
+                                             md-search-text='vm.searchText'
+                                             md-items='item in vm.querySearchDeferred(vm.searchText)'
+                                             md-item-text='item.name'
+                                             placeholder="Search for a property">>
+                                <span md-highlight-text='vm.searchText'>{{item.name}}</span>
+                            </md-autocomplete>
+                            <md-chip-template>
+
+                                  <strong>{{$chip.name}}</strong>
+                                  <!--<em>({{$chip.category}})</em>-->
+
+                            </md-chip-template>
+                        </md-chips>
+                    </div>
+
                 </div>
 
 
 
                 <div class="form-group row m-t-md">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="eiffbtn btn white ">Sign in</button>
+                    <div class="col-sm-offset-2 col-sm-10"><br>
+                        <button type="submit" class="eiffbtn btn white ">Submit</button>
                     </div>
                 </div>
             </form>

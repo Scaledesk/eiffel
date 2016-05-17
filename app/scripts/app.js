@@ -7,7 +7,7 @@
  * @description
  * # eiffelApp
  *
- * Main module of the application.
+ * Main module of the application. ,'ui.select', 'ngSanitize'
  */
 angular
   .module('eiffelApp', ['ngRoute','ngMaterial','ui.bootstrap','ngAnimate','ngTouch','slick'])
@@ -124,8 +124,23 @@ angular
         redirectTo: '/'
       });
 
-  }).run(function($rootScope) {
+  })
+    .run(function($rootScope) {
   $rootScope.headerShow = "login";
+<<<<<<< Updated upstream
 });
 
+=======
+})
+ /*   .require.config({
+  paths: {
+    'angular': 'bower_components/angular/angular',
+    'angular-ui-select': 'bower_components/angular-ui-select/dist/select'
+  },
+  shim: {
+    'angular-ui-select': ['angular']
+  }
+})*/;
+  
+>>>>>>> Stashed changes
 
