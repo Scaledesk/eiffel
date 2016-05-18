@@ -14,6 +14,7 @@ angular.module('eiffelApp')
       'AngularJS',
       'Karma'
     ];
+      $rootScope.headerShow = "dashboard";
 
       $scope.data = {
           group : ''
