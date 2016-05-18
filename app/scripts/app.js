@@ -125,6 +125,26 @@ angular
   controller: 'MoneyGetDetailsCtrl',
   controllerAs: 'moneyGetDetails'
 })
+.when('/service-get-details', {
+  templateUrl: 'views/service-get-details.html',
+  controller: 'ServiceGetDetailsCtrl',
+  controllerAs: 'serviceGetDetails'
+})
+.when('/meet-stream-get-details', {
+  templateUrl: 'views/meet-stream-get-details.html',
+  controller: 'MeetStreamGetDetailsCtrl',
+  controllerAs: 'meetStreamGetDetails'
+})
+.when('/news-get-details', {
+  templateUrl: 'views/news-get-details.html',
+  controller: 'NewsGetDetailsCtrl',
+  controllerAs: 'newsGetDetails'
+})
+.when('/q-a-get-details', {
+  templateUrl: 'views/q-a-get-details.html',
+  controller: 'QAGetDetailsCtrl',
+  controllerAs: 'qAGetDetails'
+})
 .otherwise({
         redirectTo: '/'
       });
