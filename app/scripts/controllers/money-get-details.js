@@ -8,7 +8,7 @@
  * Controller of the eiffelApp
  */
 angular.module('eiffelApp')
-  .controller('MoneyGetDetailsCtrl', function ($scope) {
+  .controller('MoneyGetDetailsCtrl', function ($scope,$rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
