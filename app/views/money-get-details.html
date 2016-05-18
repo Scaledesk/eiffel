@@ -7,122 +7,107 @@
      <div class="box">
        <div class="box-header">
          <h2>Money</h2>
-
        </div>
        <div class="box-divider m-a-0"></div>
        <div class="box-body">
          <form role="form" ng-submit="submit()" ng-controller="MoneyGetDetailsCtrl" ng-cloak>
-           <div class="form-group row">
-            <!-- <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>-->
-             <div class="col-sm-10">
-
-               <md-radio-group ng-model="data.group">
-                    <div class="col-sm-6">
-                   <md-radio-button value="Required" class="md-primary">Required</md-radio-button>
-                   </div>
-                 <div class="col-sm-6">
-                 <md-radio-button value="Offered" class="md-primary"> Offered </md-radio-button>
+             <div class="row">
+                 <div class="container">
+                     <md-radio-group ng-model="data.group">
+                     <div class="col-md-6 col-sm-6 col-xs-6">
+                         <md-radio-button value="Required" class="md-primary">Required</md-radio-button></div>
+                     <div class="col-md-6 col-sm-6 col-xs-6">
+                         <md-radio-button value="Offered" class="md-primary"> Offered </md-radio-button>
                      </div>
-               </md-radio-group>
-              <!-- <input type="email" class="form-control" id="inputEmail3" placeholder="Email">-->
+                         </md-radio-group>
+                 </div>
              </div>
-           </div>
-           <div class="eiff_form_ele1 form-group row">
-
-             <label for="title" class="eiff_form_ele col-sm-2 form-control-label">Title</label>
-
-<div class="eiffbtn1">
-               <md-input-container >
-                 <label>Title</label>
-                 <input  name="title"  type="text">
-               </md-input-container>
-</div>
-
-              <!-- <input type="password" class="form-control" id="inputPassword3" placeholder="Password">-->
-
-           </div>
-           <div class="eiff_form_ele1  form-group row">
-             <label for="amount" class="eiff_form_ele col-sm-2 form-control-label">Amount</label>
-
-               <md-input-container>
-                 <label>Amount</label>
-                 <input  type="text" name="amount">
-               </md-input-container>
-              <!-- <input type="file" class="form-control">-->
-
-           </div>
-
-           <div class="eiff_form_ele1 form-group row">
-             <label for="rate" class="eiff_form_ele col-sm-2 form-control-label">Rate of Return</label>
-
-               <md-input-container>
-                 <label>Rate of Return</label>
-                 <input  type="text" name="rate-of-return">
-               </md-input-container>
-               <!-- <input type="file" class="form-control">-->
-
-           </div >
-           <div class="eiff_form_ele1 form-group row">
-             <label for="Duration" class="eiff_form_ele col-sm-2 form-control-label"> Duration</label>
-
-               <md-input-container>
-                 <label>Duration</label>
-                 <input  type="Duration" name="Duration">
-               </md-input-container>
-               <!-- <input type="file" class="form-control">-->
-
-           </div>
-
-           <div class="eiff_form_ele1 form-group row">
-             <label for="Investment for" class="eiff_form_ele  form-control-label">Investment for :</label>
-
-               <md-input-container>
-                 <label>Investment for</label>
-                 <input  type="text" name="Blank">
-               </md-input-container>
-               <!-- <input type="file" class="form-control">-->
-
-           </div>
-           <div class="eiff_form_ele1 form-group row">
-             <label for="Invest Against" class="eiff_form_ele  col-sm-2 form-control-label">Invest Against</label>
-
-               <md-input-container>
-                 <label>Invest Against</label>
-                 <input  type="text" name="Invest-Against">
-               </md-input-container>
-               <!-- <input type="file" class="form-control">-->
-
-           </div>
-           <div class="eiff_form_ele1 form-group row">
-             <label for="Location" class="eiff_form_ele  col-sm-2 form-control-label">Location</label>
-
-               <md-input-container>
-                 <label>Location</label>
-                 <input  type="text" name="Location">
-               </md-input-container>
-               <!-- <input type="file" class="form-control">-->
-
-           </div>
-
-           <div class="eiff_form_ele1 form-group row">
-           <label for="Description" class="eiff_form_ele  col-sm-2 form-control-label">Description</label>
-
-             <md-input-container>
-               <label>Description</label>
-               <input  type="text" name="Description">
-             </md-input-container>
-             <!-- <input type="file" class="form-control">-->
-
-         </div>
-           <!-- <div class="form-group row"> --><div><label for="Post Confidentially" class="col-sm-2 form-control-label">Post Confidentially</label>
-           <md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
-           </md-checkbox>
+             <div class="row">
+                 <div class="container">
+                     <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Title</p></div>
+                     <div class="col-md-8 col-sm-10 col-xs-8">
+                     <md-input-container class="md-block" flex-gt-sm>
+                         <label>Title</label>
+                     <input  type="text" name="title">
+                     </md-input-container></div>
+                 </div>
              </div>
-           <div class="form-group row m-t-md">
-             <div class="col-sm-offset-2 col-sm-10">
-               <button type="submit" class="eiffbtn btn white ">Sign in</button>
+             <div class="row">
+                 <div class="container">
+                     <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Amount</p></div>
+                     <div class="col-md-8 col-sm-10 col-xs-8">
+                         <md-input-container class="md-block" flex-gt-sm>
+                             <label>Amount</label>
+                             <input  type="text" name="amount">
+                         </md-input-container></div>
+                 </div>
              </div>
-           </div>
+             <div class="row">
+                 <div class="container">
+                     <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Rate of Return</p></div>
+                     <div class="col-md-8 col-sm-10 col-xs-8">
+                         <md-input-container class="md-block" flex-gt-sm>
+                             <label>Rate of Return</label>
+                             <input  type="text" name="rate-of-return">
+                         </md-input-container></div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="container">
+                     <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Duration</p></div>
+                     <div class="col-md-8 col-sm-10 col-xs-8">
+                         <md-input-container class="md-block" flex-gt-sm>
+                             <label>Duration</label>
+                             <input  type="text" name="duration">
+                         </md-input-container></div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="container">
+                     <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Investment</p></div>
+                     <div class="col-md-8 col-sm-10 col-xs-8">
+                         <md-input-container class="md-block" flex-gt-sm>
+                             <label>Investment</label>
+                             <input  type="text" name="investment">
+                         </md-input-container></div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="container">
+                     <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Invest Against</p></div>
+                     <div class="col-md-8 col-sm-10 col-xs-8">
+                         <md-input-container class="md-block" flex-gt-sm>
+                             <label>Invest Against</label>
+                             <input  type="text" name="invest-against">
+                         </md-input-container></div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="container">
+                     <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Location</p></div>
+                     <div class="col-md-8 col-sm-10 col-xs-8">
+                         <md-input-container class="md-block" flex-gt-sm>
+                             <label>Location</label>
+                             <input  type="text" name="location">
+                         </md-input-container></div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="container">
+                     <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Description</p></div>
+                     <div class="col-md-8 col-sm-10 col-xs-8">
+                         <md-input-container class="md-block" flex-gt-sm>
+                             <label>Description</label>
+                             <input  type="text" name="description">
+                         </md-input-container></div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-6"><p>Post Confidentially</p></div>
+                 <div class="col-md-6 col-sm-6 col-xs-6"><md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
+                 </md-checkbox></div>
+             </div>
+             <div class="text-center"><button class="btn btn-fw primary">Submit</button></div>
          </form>
        </div>
      </div>
