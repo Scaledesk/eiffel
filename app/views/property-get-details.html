@@ -8,113 +8,68 @@
         </div>
         <div class="box-divider m-a-0"></div>
         <div class="box-body">
-            <form role="form" ng-submit="submit()" ng-controller="PropertyGetDetailsCtrl" ng-cloak>
-                <div class="form-group row">
-                    <!-- <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>-->
-                    <div class="col-sm-10">
-
+            <form role="form" ng-submit="submit()" ng-controller="MoneyGetDetailsCtrl" ng-cloak>
+                <div class="row">
+                    <div class="container">
                         <md-radio-group ng-model="data.group">
-                            <div class="col-sm-6">
-                                <md-radio-button value="Required" class="md-primary">Required</md-radio-button>
-                            </div>
-                            <div class="col-sm-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <md-radio-button value="Required" class="md-primary">Required</md-radio-button></div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                                 <md-radio-button value="Offered" class="md-primary"> Offered </md-radio-button>
                             </div>
                         </md-radio-group>
-                        <!-- <input type="email" class="form-control" id="inputEmail3" placeholder="Email">-->
                     </div>
                 </div>
-                <div class="eiff_form_ele1 form-group row">
-
-                    <label for="title" class="eiff_form_ele col-sm-2 form-control-label">Title</label>
-
-                    <div class="eiffbtn1">
-                        <md-input-container >
-                            <label>Title</label>
-                            <input  name="title"  type="text">
-                        </md-input-container>
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Title</p></div>
+                        <div class="col-md-8 col-sm-10 col-xs-8">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Title</label>
+                                <input  type="text" name="title">
+                            </md-input-container></div>
                     </div>
-
-                    <!-- <input type="password" class="form-control" id="inputPassword3" placeholder="Password">-->
-
                 </div>
-                <div class="eiff_form_ele1  form-group row">
-                    <label for="amount" class="eiff_form_ele col-sm-2 form-control-label">Description</label>
-
-                    <md-input-container>
-                        <label>Description</label>
-                        <input  type="text" name="description">
-                    </md-input-container>
-                    <!-- <input type="file" class="form-control">-->
-
-                </div>
-
-                <div class="eiff_form_ele1 form-group row">
-                    <label for="rate" class="eiff_form_ele col-sm-2 form-control-label">Rent or Lease</label>
-
-                    <md-input-container>
-                        <label>Rent or Lease</label>
-                        <input  type="text" name="rent-or-lease">
-                    </md-input-container>
-                    <!-- <input type="file" class="form-control">-->
-
-                </div >
-                <div class="eiff_form_ele1 form-group row">
-                    <label for="Duration" class="eiff_form_ele col-sm-2 form-control-label"> Duration</label>
-
-                    <md-input-container>
-                        <label>Duration</label>
-                        <input  type="Duration" name="Duration">
-                    </md-input-container>
-                    <!-- <input type="file" class="form-control">-->
-
-                </div>
-
-                <div class="eiff_form_ele1 form-group row">
-                    <label for="Type of Property " class="eiff_form_ele  form-control-label">Type of Property :</label>
-
-
-
-                    <div ng-controller="PropertyGetDetailsCtrl as ctrl" layout="column" ng-cloak>
-                        <md-content class="md-padding" layout="column">
-
-
-
-                            <md-chips ng-model="ctrl.selectedVegetables" md-autocomplete-snap
-                                      md-transform-chip="ctrl.transformChip($chip)"
-                                      md-require-match="ctrl.autocompleteDemoRequireMatch">
-                                <md-autocomplete
-                                        md-selected-item="ctrl.selectedItem"
-                                        md-search-text="ctrl.searchText"
-                                        md-items="item in ctrl.querySearch(ctrl.searchText)"
-                                        md-item-text="item.name"
-                                        placeholder="Search for a vegetable">
-                                    <span md-highlight-text="ctrl.searchText">{{item.name}}</span>
-                                   <!-- <span md-highlight-text="ctrl.searchText">{{item.name}}&lt;!&ndash; :: {{item.type}}&ndash;&gt;</span>-->
-                                </md-autocomplete>
-                                <md-chip-template>
-                                    <span>
-                                      <strong>{{$chip.name}}</strong>
-                                      <!--<em>({{$chip.type}})</em>-->
-                                    </span>
-                                </md-chip-template>
-                            </md-chips>
-
-                        </md-content>
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Description</p></div>
+                        <div class="col-md-8 col-sm-10 col-xs-8">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Description</label>
+                                <input  type="text" name="description">
+                            </md-input-container></div>
                     </div>
-
-
-
-
-
-
-
-
-
-                </div> <br>
-                <div class="form-group row m-t-md">
-                    <div class="col-sm-offset-2 col-sm-10"><br>
-                        <button type="submit" class="eiffbtn btn white ">Submit</button>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Rent Or Lease</p></div>
+                        <div class="col-md-8 col-sm-10 col-xs-8">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Rent Or Lease</label>
+                                <input  type="text" name="rent">
+                            </md-input-container></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Type of Property</p></div>
+                        <div class="col-md-8 col-sm-10 col-xs-8">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>State</label>
+                                <md-select ng-model="user.state">
+                                    <md-option ng-repeat="state in states" value="{{state.abbrev}}">
+                                        {{state.abbrev}}
+                                    </md-option>
+                                </md-select>
+                            </md-input-container>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                <button class="btn btn-fw primary">Add Photos</button></div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                        <button class="btn btn-fw primary">Add Videos</button>
                     </div>
                 </div>
             </form>
