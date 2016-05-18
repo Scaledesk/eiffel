@@ -28,5 +28,5 @@ angular.module('eiffelApp')
       for (var i=0; i<4; i++) {
           vm.addSlide();
       }
-      
+      $rootScope.headerShow = "dashboard";
   });
