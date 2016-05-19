@@ -8,13 +8,12 @@
  * Controller of the eiffelApp
  */
 angular.module('eiffelApp')
-  .controller('PropertyCtrl', function ($scope) {
+  .controller('PropertyCtrl', function ($rootScope,$scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-
       var vm = $scope;
       vm.myInterval = 5000;
       vm.noWrapSlides = false;

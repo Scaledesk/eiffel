@@ -8,7 +8,7 @@
  * Controller of the eiffelApp
  */
 angular.module('eiffelApp')
-  .controller('ServiceCtrl', function () {
+  .controller('ServiceCtrl', function ($rootScope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

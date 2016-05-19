@@ -26,13 +26,11 @@
                    </div>
                </div>
                <div class="col-md-6">
-                   <div class="row">
-                       <div class="col-md-4 col-md-offset-8 eff_icon">
-                           <i class="material-icons">&#xE0C8;</i><span>Noida</span>
-                       </div>
+                   <div class="pull-right  ">
+                       <i class="material-icons eiff-16 text-muted">&#xE0C8;</i><span>Noida</span>
                    </div>
                </div>
-           </div><hr>
+           </div><hr class="eiff-hr">
            <div class="row container">
                <p class="eff_title">Title for post lorem ipsum sodales nisi nec condimentum.</p>
            </div>
@@ -40,7 +38,7 @@
                <p>Consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis
                    ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum.
                    Mauris convallis mauris at pellentesque volutpat. Phasellus at ultricies neque,
-                   quis malesuada augue. Donec eleifend...<a href="#">Read More</a><br>
+                   quis malesuada augue. Donec eleifend...<a class="text-primary" href="#">Read More</a><br>
 
                </p>
                <button class="btn btn-sm rounded btn-outline m-r b-primary" type="button">
@@ -55,14 +53,23 @@
            </div><br>
            <div class="sl-footer">
                <a href data-toggle="collapse" data-target="#">
-                   <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Like
-               </a><span>&nbsp;</span>
-               <a href data-toggle="collapse" data-target="#reply-1">
-                   <i class="fa fa-comments" aria-hidden="true"></i> Comment
-               </a><span>&nbsp;</span>
-               <a href data-toggle="collapse" data-target="#">
-                   <i class="fa fa-share-alt" aria-hidden="true"></i> Share
-               </a>
+                   <i class="fa fa-thumbs-o-up text-muted" aria-hidden="true"></i> Like
+                   <md-tooltip md-direction="{{demo.tipDirection}}">
+                       Like this post
+                   </md-tooltip>
+               </a><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+               <a  href data-toggle="collapse" data-target="#reply-1">
+                   <i class="fa fa-comments text-muted" aria-hidden="true"></i> Comment
+                   <md-tooltip md-direction="{{demo.tipDirection}}">
+                       Leave a comment
+                   </md-tooltip>
+               </a><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+               <a  href data-toggle="collapse" data-target="#" aria-label="Share">
+                   <i class="fa fa-share-alt text-muted" aria-hidden="true"></i> Share
+                   <md-tooltip md-direction="{{demo.tipDirection}}">
+                       Share this post with friends
+                   </md-tooltip></a>
            </div>
            <div class="box collapse m-a-1 b-a" id="reply-1">
                <form>
@@ -119,8 +126,8 @@
        </a>
       </div>
       <div class="text-center m-t">
-       <a href class="btn btn-sm rounded primary w-sm m-y-xs">Follow</a>
-       <a href class="btn btn-sm rounded btn-outline b-primary w-sm">Invite</a>
+       <a href class="btn btn-sm rounded primary w-sm m-y-xs">Edit</a>
+       <a href class="btn btn-sm rounded btn-outline b-primary w-sm">Sync</a>
       </div>
      </div>
      <div class="row no-gutter b-t b-b">

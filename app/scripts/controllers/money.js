@@ -9,6 +9,7 @@
  */
 angular.module('eiffelApp')
   .controller('MoneyCtrl', function ($rootScope,$scope) {
+      //accordian start
           $scope.oneAtATime = true;
           $scope.groups = [
               {
@@ -32,5 +33,20 @@ angular.module('eiffelApp')
               isFirstOpen: true,
               isFirstDisabled: false
           };
+      //accordian end
+      //tooltip start
+      $scope.demo = {
+          showTooltip : true,
+          tipDirection : 'bottom'
+      };
+      $scope.$watch('demo.tipDirection',function(val) {
+          if (val && val.length ) {
+              $scope.demo.showTooltip = true;
+          }
+      })
+      //tooltip end
+      
+
       $rootScope.headerShow = "dashboard";
+
   });

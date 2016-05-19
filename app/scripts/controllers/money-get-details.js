@@ -15,8 +15,9 @@ angular.module('eiffelApp')
       'Karma'
     ];
       $rootScope.headerShow = "dashboard";
-
       $scope.data = {
           group : ''
                   };
   });
+
+    $('[data-toggle="popover"]').popover();
