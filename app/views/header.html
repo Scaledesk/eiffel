@@ -1,230 +1,91 @@
-        <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <div class="app" id="app">
-    <div id="content" class="app-content box-shadow-z0" role="main">
-      <div class="app-header navbar-md white box-shadow">
-        <div class="navbar">
-        <a data-toggle="collapse" data-target="#navbar-4" class="navbar-item pull-right hidden-md-up m-a-0 m-l">
-          <i class="material-icons">&#xe5d2;</i>
+<div class="app-header navbar-md white box-shadow">
+  <div class="navbar ng-scope">
+    <a data-toggle="collapse" data-target="#navbar-4" class="navbar-item pull-right hidden-md-up m-a-0 m-l">
+    <i class="material-icons"></i>
+    </a>
+    <a class="navbar-brand ng-scope">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24">
+  <path d="M 4 4 L 44 4 L 44 44 Z" fill="#a88add"></path>
+  <path d="M 4 4 L 34 4 L 24 24 Z" fill="rgba(0,0,0,0.15)"></path>
+  <path d="M 4 4 L 24 4 L 4  44 Z" fill="#0cc2aa"></path>
+   </svg>
+    <img src="../assets/images/logo.png" alt="." class="hide">
+    <span class="hidden-folded inline ng-binding">Eiffel</span>
+    </a>
+    <ul class="nav navbar-nav pull-right">
+    <li class="nav-item">
+      <a class="nav-link" ui-fullscreen="">
+    <span><i class="material-icons md-24"></i></span>
+    </a>
+    </li>
+      <li class="nav-item">
+        <a class="nav-link" ui-fullscreen="">
+          <span><i class="material-icons md-24"></i></span>
         </a>
-                  <!-- brand -->
-          <a class="navbar-brand">
-            <div ui-include="'../assets/images/logo.svg'"></div>
-            <img src="../assets/images/logo.png" alt="." class="hide">
-            <span class="hidden-folded inline">{{app.name}}</span>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="" class="nav-link dropdown-toggle clear" data-toggle="dropdown">
+          <span class="avatar w-32">
+            <img src="../assets/images/a2.jpg" alt="...">
+            <i class="busy b-white right"></i>
+          </span>
+        </a>
+        <div class="dropdown-menu pull-right dropdown-menu-scale ng-scope">
+          <a class="dropdown-item" ui-sref="app.inbox.list" href="#/app/inbox/inbox/">
+            <span>Inbox</span>
+            <span class="label warn m-l-xs">3</span>
           </a>
-          <!-- / brand -->
-
-
-        <!-- nabar right -->
-        <ul class="nav navbar-nav pull-right">
-
-         <li class="nav-item dropdown padding-left">
-            <a class="nav-link" href data-toggle="dropdown">
-              <i class="material-icons">&#xe8b6;</i>
-            </a>
-            <div class="dropdown-menu text-color w-lg animated fadeInUp pull-right">
-              <!-- <div ui-include="'../views/blocks/navbar.form.html'"></div> -->
-                              <!-- search form -->
-                <form class="navbar-form form-inline navbar-item m-l v-m" role="search">
-                  <div class="form-group l-h m-a-0">
-                    <div class="input-group input-group-sm">
-                      <input type="text" class="form-control" placeholder="Search projects...">
-                      <span class="input-group-btn">
-                        <button type="submit" class="btn white b-a no-shadow"><i class="fa fa-search"></i></button>
-                      </span>
-                    </div>
-                  </div>
-                </form>
-                <!-- / search form -->
-
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" ui-fullscreen>
-              <span><i class="material-icons">message</i></span> 
-            </a>
-          </li>
-          
-          <li class="nav-item dropdown">
-            <a href class="nav-link" data-toggle="dropdown">
-              <i class="material-icons">&#xe7f5;</i>
-              <span class="label up p-a-0 warn"></span>
-            </a>
-            <!-- dropdown -->
-<div class="dropdown-menu pull-right w-xl animated fadeInUp no-bg no-border no-shadow">
-    <div class="scrollable" style="max-height: 220px">
-      <ul class="list-group list-group-gap m-a-0">
-        <li class="list-group-item black lt box-shadow-z0 b">
-          <span class="pull-left m-r">
-            <img src="../assets/images/a0.jpg" alt="..." class="w-40 img-circle">
-          </span>
-          <span class="clear block">
-            Use awesome <a href class="text-primary">animate.css</a><br>
-            <small class="text-muted">10 minutes ago</small>
-          </span>
-        </li>
-        <li class="list-group-item black lt box-shadow-z0 b">
-          <span class="pull-left m-r">
-            <img src="../assets/images/a1.jpg" alt="..." class="w-40 img-circle">
-          </span>
-          <span class="clear block">
-            <a href class="text-primary">Joe</a> Added you as friend<br>
-            <small class="text-muted">2 hours ago</small>
-          </span>
-        </li>
-        <li class="list-group-item dark-white text-color box-shadow-z0 b">
-          <span class="pull-left m-r">
-            <img src="../assets/images/a2.jpg" alt="..." class="w-40 img-circle">
-          </span>
-          <span class="clear block">
-            <a href class="text-primary">Danie</a> sent you a message<br>
-            <small class="text-muted">1 day ago</small>
-          </span>
-        </li>
-      </ul>
-    </div>
-</div>
-<!-- / dropdown -->
-
-          </li>
-          <li class="nav-item dropdown">
-            <a href class="nav-link dropdown-toggle clear" data-toggle="dropdown">
-              <span class="avatar w-32">
-                <img src="../assets/images/a2.jpg" alt="...">
-                <i class="busy b-white right"></i>
-              </span>
-            </a>
-<div class="dropdown-menu pull-right dropdown-menu-scale">
-  <a class="dropdown-item" ui-sref="app.inbox.list">
-    <span>Inbox</span>
-    <span class="label warn m-l-xs">3</span>
-  </a>
-  <a class="dropdown-item" ui-sref="app.page.profile">
-    <span>Profile</span>
-  </a>
-  <a class="dropdown-item" ui-sref="app.page.setting">
-    <span>Settings</span>
-    <span class="label primary m-l-xs">3/9</span>
-  </a>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" ui-sref="app.docs">
-    Need help?
-  </a>
-  <a class="dropdown-item" ui-sref="access.signin">Sign out</a>
-</div>
-          </li>
-          <li class="nav-item dropdown">
-            <a href class="nav-link" data-toggle="dropdown">
-              <i class="fa fa-comment" aria-hidden="true"></i>
-              <!-- <span class="label up p-a-0 accent"></span> -->
-            </a>
-<div class="dropdown-menu w-xl text-color pull-right p-a-0 animated flipInX">
-
-<div class="row no-gutter text-{{app.setting.theme.primary}}-hover">
-  <div class="col-xs-4 b-r b-b">
-    <a class="p-a block text-center">
-      <i class="material-icons md-24 text-muted m-v-sm">&#xe190;</i>
-      <span class="block">Alarm</span>
-    </a>
-  </div>
-  <div class="col-xs-4 b-r b-b">
-    <a class="p-a block text-center">
-      <i class="material-icons md-24 text-muted m-v-sm">&#xe87d;</i>
-      <span class="block">Favorite</span>
-    </a>
-  </div>
-  <div class="col-xs-4 b-b">
-    <a class="p-a block text-center">
-      <i class="material-icons md-24 text-muted m-v-sm">&#xe889;</i>
-      <span class="block">History</span>
-    </a>
-  </div>
-  <div class="col-xs-4 b-r">
-    <a class="p-a block text-center">
-      <i class="material-icons md-24 text-muted m-v-sm">&#xe0b0;</i>
-      <span class="block">Call</span>
-    </a>
-  </div>
-  <div class="col-xs-4 b-r">
-    <a class="p-a block text-center">
-      <i class="material-icons md-24 text-muted m-v-sm">&#xe0b7;</i>
-      <span class="block">Chat</span>
-    </a>
-  </div>
-  <div class="col-xs-4">
-    <a class="p-a block text-center">
-      <i class="material-icons md-24 text-muted m-v-sm">&#xe0be;</i>
-      <span class="block">Inbox</span>
-    </a>
-  </div>
-</div>
-</div>
-          </li>
-        </ul>
-        <!-- / navbar right -->
-
-        <!-- navbar collapse -->
-        <div class="collapse navbar-toggleable-sm" id="navbar-4" data-pjax>
-            <!-- search form -->
-           <!--  <form class="navbar-form form-inline pull-right pull-none-sm navbar-item v-m" role="search">
-              <div class="form-group l-h m-a-0">
-                <div class="input-group input-group-sm">
-                  <input type="text" class="form-control p-x b-a rounded" placeholder="Search projects...">
-                  <span class="input-group-btn">
-                    <button type="submit" class="btn white b-a rounded no-shadow"><i class="fa fa-search"></i></button>
-                  </span>
-                </div>
-              </div>
-            </form> -->
-
-
-          <ul class="nav navbar-nav pull-left nav-active-border b-{{app.setting.theme.primary}}">
-            <li class="nav-item">
-              <a href="#/money" class="nav-link" ui-sref="app.dashboard" ui-sref-active="active">
-                <span class="nav-text">Money</span>
-              </a>
-            </li>
-
-
-          
-            <li class="nav-item">
-              <a href="#/property" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
-                <span class="nav-text">Property</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#/service" class="nav-link" ui-sref="app.chart" ui-sref-active="active">
-                <span class="nav-text">Services</span>
-              </a>
-            </li>
-             <li class="nav-item">
-              <a href="#/news" class="nav-link" ui-sref="app.chart" ui-sref-active="active">
-                <span class="nav-text">News</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#/meet" class="nav-link" ui-sref="app.chart" ui-sref-active="active">
-                <span class="nav-text">Meet</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#/q" class="nav-link" ui-sref="app.chart" ui-sref-active="active">
-                <span class="nav-text">Q & A</span>
-              </a>
-            </li>
-           
-          </ul>
-          <!-- / link and dropdown -->
+          <a class="dropdown-item" ui-sref="app.page.profile" href="#/app/page/profile">
+            <span>Profile</span></a>
+          <a class="dropdown-item" ui-sref="app.page.setting" href="#/app/page/setting">
+            <span>Settings</span>
+            <span class="label primary m-l-xs">3/9</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" ui-sref="app.docs" href="#/app/docs">Need help?</a>
+          <a class="dropdown-item" ui-sref="access.signin" href="#/access/signin">Sign out</a>
         </div>
-        <!-- / navbar collapse -->
-        </div>
-    </div>
-    
-</div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" ui-fullscreen="">
+          <span><i class="material-icons md-24"></i></span>
+        </a>
+      </li>
+    </ul>
+    <div class="collapse navbar-toggleable-sm" id="navbar-4" data-pjax="">
 
+      <ul class="nav navbar-nav pull-left nav-active-border b-primary">
+        <li class="nav-item">
+          <a href="#/app/dashboard" class="nav-link active" ui-sref="app.dashboard" ui-sref-active="active">
+            <span class="nav-text">Money</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#/app/widget" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+            <span class="nav-text">Property</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#/app/widget" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+            <span class="nav-text">Service</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#/app/widget" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+            <span class="nav-text">Meet</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#/app/widget" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+            <span class="nav-text">News</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#/app/widget" class="nav-link" ui-sref="app.widget" ui-sref-active="active">
+            <span class="nav-text">Q & A</span>
+          </a>
+        </li>
+    </ul>
+    </div>
+  </div>
 </div>

@@ -12,7 +12,7 @@
        </div>
       </div>
       <div class=" row container">
-       <div class="col-md-6 ">
+       <div class="col-md-6 col-sm-6 col-xs-6">
         <div class="sl-left profile">
          <img src="../assets/images/a0.jpg" class="img-circle profile_img"></div>
         <div class="sl-date eff_date text-muted">2 minutes ago</div>
@@ -20,8 +20,8 @@
          <a href>Peter Joo</a>
         </div>
        </div>
-       <div class="col-md-6">
-        <div class="pull-right  ">
+       <div class="col-md-6 col-sm-6 col-xs-6">
+        <div class="pull-right">
          <i class="material-icons eiff-16 text-muted">&#xE0C8;</i><span>Noida</span>
         </div>
        </div>
@@ -29,16 +29,13 @@
       <!--carousel starting-->
       <section id="features"  ng-init="index=1">
        <div class="content">
-
         <slick class="slider single-item" current-index="index" responsive="breakpoints"
                slides-to-show=1 slides-to-scroll=1>
          <div ng-repeat="m in slides">
          <img src="{{m.image}}" class="img-responsive">
          </div>
-
         </slick>
 
-        <br>
        </div>
       </section>
       <!--carousel end-->
@@ -51,12 +48,12 @@
         Mauris convallis mauris at pellentesque volutpat. Phasellus at ultricies neque,
         quis malesuada augue. Donec eleifend.....<a class="text-primary" href="#">Read More</a><br>
        </p>
-       <button class="btn btn-sm rounded btn-outline m-r b-primary " type="button">
+       <button class="btn btn-sm rounded btn-outline m-r b-primary m-b-sm" type="button">
         Rent
         <span class="label rounded warn">4</span></button>
-       <button class="btn btn-sm rounded btn-outline m-r  b-primary" type="button">
+       <button class="btn btn-sm rounded btn-outline m-r  b-primary m-b-sm" type="button">
         Type Of Property</button>
-       <button class="btn btn-sm  rounded btn-outline m-r b-primary " type="button">
+       <button class="btn btn-sm  rounded btn-outline m-r b-primary m-b-sm" type="button">
         Other tags
         </button>
       </div><br>
