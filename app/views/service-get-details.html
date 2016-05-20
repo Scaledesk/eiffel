@@ -9,15 +9,19 @@
                     <h2>Services</h2>
                 </div>
                 <div class="box-divider m-a-0"></div>
-                <div class="box-body">
-                    <form role="form" ng-submit="submit()" ng-controller="MoneyGetDetailsCtrl" ng-cloak>
+                <div class="box-body" ng-controller="ServiceGetDetailsCtrl as ctrl" ng-cloak>
+                    <form role="form" ng-submit="ctrl.submit()" ng-cloak novalidate name="serviceForm">
                         <div class="row">
                             <div class="container">
-                                <md-radio-group ng-model="data.group">
+                                <md-radio-group ng-model="group" ng-required="true" name="group">
                                     <div class="col-md-6 col-sm-6 col-xs-6">
                                         <md-radio-button value="Required" class="md-primary">Required</md-radio-button></div>
                                     <div class="col-md-6 col-sm-6 col-xs-6">
                                         <md-radio-button value="Offered" class="md-primary"> Offered </md-radio-button>
+                                    </div>
+
+                                    <div ng-messages="serviceForm.group.$error" >
+                                        <div ng-message="required">This is required.</div>
                                     </div>
                                 </md-radio-group>
                             </div>
@@ -31,7 +35,10 @@
                                         <input type="text" uib-popover="Lorem Ipsum is simply dummy text of
                                         the printing and typesetting industry. Lorem Ipsum has been the
                                         industry's standard dummy text ever since" popover-trigger="focus" popover-placement="right-top"
-                                               class="form-control">
+                                               class="form-control" ng-model="title" name="title" ng-required="true">
+                                        <div ng-messages="serviceForm.title.$error" >
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
                                         <!--<input  type="text" name="title">-->
                                     </md-input-container></div>
                             </div>
@@ -45,7 +52,10 @@
                                         <input type="text" uib-popover="Lorem Ipsum is simply dummy text of
                                         the printing and typesetting industry. Lorem Ipsum has been the
                                         industry's standard dummy text ever since" popover-trigger="focus" popover-placement="right-top"
-                                               class="form-control">
+                                               class="form-control" ng-model="category" name="category" ng-required="true">
+                                        <div ng-messages="serviceForm.category.$error" >
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
                                     </md-input-container></div>
                             </div>
                         </div>
@@ -58,7 +68,10 @@
                                         <input type="text" uib-popover="Lorem Ipsum is simply dummy text of
                                         the printing and typesetting industry. Lorem Ipsum has been the
                                         industry's standard dummy text ever since" popover-trigger="focus" popover-placement="right-top"
-                                               class="form-control">
+                                               class="form-control" ng-model="price" name="price" ng-required="true">
+                                        <div ng-messages="serviceForm.price.$error" >
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
                                     </md-input-container></div>
                             </div>
                         </div>
@@ -71,7 +84,10 @@
                                         <input type="text" uib-popover="Lorem Ipsum is simply dummy text of
                                         the printing and typesetting industry. Lorem Ipsum has been the
                                         industry's standard dummy text ever since" popover-trigger="focus" popover-placement="right-top"
-                                               class="form-control">
+                                               class="form-control" ng-model="location" name="location" ng-required="true">
+                                        <div ng-messages="serviceForm.location.$error" >
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
                                     </md-input-container></div>
                             </div>
                         </div>
@@ -79,13 +95,41 @@
                             <div class="container">
                                 <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Service Tag</p></div>
                                 <div class="col-md-8 col-sm-10 col-xs-8">
-                                    <md-input-container class="md-block" flex-gt-sm>
+                                   <!-- <md-input-container class="md-block" flex-gt-sm>
                                         <label>Tags</label>
                                         <input type="text" uib-popover="Lorem Ipsum is simply dummy text of
                                         the printing and typesetting industry. Lorem Ipsum has been the
                                         industry's standard dummy text ever since" popover-trigger="focus" popover-placement="right-top"
                                                class="form-control">
-                                    </md-input-container>
+                                    </md-input-container>-->
+                                    <md-content class="md-padding" layout="column">
+                                        <md-chips ng-model="ctrl.selectedCategory" md-autocomplete-snap
+                                                  md-transform-chip="ctrl.transformChip($chip)"
+                                                  md-require-match="ctrl.autocompleteDemoRequireMatch">
+                                            <md-autocomplete
+                                                    md-selected-item="ctrl.selectedItem"
+                                                    md-search-text="ctrl.searchText"
+                                                    md-items="item in ctrl.querySearch(ctrl.searchText)"
+                                                    md-item-text="item.name"
+                                                    name="item"
+                                                    placeholder="Search for a Service">
+                                                <span md-highlight-text="ctrl.searchText">{{item.name}}</span>
+
+                                                <div ng-messages="propertyForm.item.$error" >
+                                                    <div ng-message="required">This is required.</div>
+
+                                                </div>
+
+                                            </md-autocomplete>
+                                            <md-chip-template>
+                                    <span>
+                                      <strong>{{$chip.name}}</strong>
+
+                                    </span>
+                                            </md-chip-template>
+                                        </md-chips>
+
+                                    </md-content>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +142,10 @@
                                         <input type="text" uib-popover="Lorem Ipsum is simply dummy text of
                                         the printing and typesetting industry. Lorem Ipsum has been the
                                         industry's standard dummy text ever since" popover-trigger="focus" popover-placement="right-top"
-                                               class="form-control">
+                                               class="form-control" ng-model="description" name="description" ng-required="true" md-maxlength="500">
+                                        <div ng-messages="serviceForm.description.$error" >
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
                                     </md-input-container></div>
                             </div>
                         </div>
