@@ -9,14 +9,17 @@
                 </div>
                 <div class="box-divider m-a-0"></div>
                 <div class="box-body">
-                    <form role="form" ng-submit="submit()" ng-controller="MoneyGetDetailsCtrl" ng-cloak>
+                    <form role="form" ng-submit="submit()" ng-controller="MeetStreamGetDetailsCtrl" ng-cloak novalidate name="meetStreamForm">
                         <div class="row">
                             <div class="container">
-                                <md-radio-group ng-model="data.group">
+                                <md-radio-group ng-model="group" ng-required="true" name="group">
                                     <div class="col-md-6 col-sm-6 col-xs-6">
                                         <md-radio-button value="Required" class="md-primary">Required</md-radio-button></div>
                                     <div class="col-md-6 col-sm-6 col-xs-6">
                                         <md-radio-button value="Offered" class="md-primary"> Offered </md-radio-button>
+                                    </div>
+                                      <div ng-messages="meetStreamForm.group.$error" >
+                                        <div ng-message="required">This is required.</div>
                                     </div>
                                 </md-radio-group>
                             </div>
@@ -27,7 +30,11 @@
                                 <div class="col-md-8 col-sm-10 col-xs-8">
                                     <md-input-container class="md-block" flex-gt-sm>
                                         <label>Agenda Purpose</label>
-                                        <input  type="text" name="agenda">
+                                        <input  type="text" name="agenda" ng-required="true" ng-model="agenda">
+
+                                        <div ng-messages="meetStreamForm.agenda.$error" >
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
                                     </md-input-container></div>
                             </div>
                         </div>
@@ -35,10 +42,18 @@
                             <div class="container">
                                 <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Date</p></div>
                                 <div class="col-md-8 col-sm-10 col-xs-8">
-                                    <md-input-container class="md-block" flex-gt-sm>
-                                        <label>Choose Date</label>
-                                        <input  type="text" name="date">
-                                    </md-input-container></div>
+
+
+                                        <md-datepicker ng-model="myDate"  md-placeholder="Enter date" class="md-block" flex-gt-sm>
+
+                                            <!--<div ng-messages="meetStreamForm.myDate.$error" >
+                                                <div ng-message="required">This is required.</div>
+                                            </div>-->
+
+                                        </md-datepicker>
+                                       <!-- <input  type="text" name="date">-->
+
+                                   </div>
                             </div>
                         </div>
                         <div class="row">
@@ -47,7 +62,11 @@
                                 <div class="col-md-8 col-sm-10 col-xs-8">
                                     <md-input-container class="md-block" flex-gt-sm>
                                         <label>Choose Category</label>
-                                        <input  type="text" name="category">
+                                        <input  type="text" name="category" ng-model="category" ng-required="true">
+
+                                        <div ng-messages="meetStreamForm.category.$error" >
+                                               <div ng-message="required">This is required.</div>
+                                           </div>
                                     </md-input-container></div>
                             </div>
                         </div>
@@ -57,17 +76,35 @@
                                 <div class="col-md-8 col-sm-10 col-xs-8">
                                     <md-input-container class="md-block" flex-gt-sm>
                                         <label>Location</label>
-                                        <input  type="text" name="location">
+                                        <input  type="text" name="location" ng-required="true" ng-model="location">
+
+                                        <div ng-messages="meetStreamForm.location.$error" >
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
                                     </md-input-container></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="container">
                                 <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Duration</p></div>
-                                <div class="col-md-8 col-sm-10 col-xs-8">
+                                <div class="col-md-4 col-sm-5 col-xs-4">
                                     <md-input-container class="md-block" flex-gt-sm>
-                                        <label>Investment</label>
-                                        <input  type="text" name="investment">
+                                        <label>From</label>
+                                        <input  type="text" name="durationfrom" ng-model="durationfrom" ng-required="true">
+
+                                        <div ng-messages="meetStreamForm.durationfrom.$error" >
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
+                                    </md-input-container></div>
+
+                                <div class="col-md-4 col-sm-5 col-xs-4">
+                                    <md-input-container class="md-block" flex-gt-sm>
+                                        <label>To</label>
+                                        <input  type="text" name="durationTo" ng-model="durationTo" ng-required="true">
+
+                                        <div ng-messages="meetStreamForm.durationTo.$error" >
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
                                     </md-input-container></div>
                             </div>
                         </div>
@@ -77,8 +114,14 @@
                                 <div class="col-md-8 col-sm-10 col-xs-8">
                                     <md-input-container class="md-block" flex-gt-sm>
                                         <label>Description</label>
-                                        <input type="text" name="description">
-                                    </md-input-container></div>
+                                        <input type="text" name="description" ng-model="description" ng-required="true" md-maxlength="500">
+
+                                        <div ng-messages="meetStreamForm.description.$error" >
+                                            <div ng-message="required">This is required.</div>
+                                        </div>
+                                    </md-input-container>
+
+                                </div>
                             </div>
                         </div>
                         <div class="row">
