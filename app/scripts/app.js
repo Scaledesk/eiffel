@@ -10,7 +10,7 @@
  * Main module of the application. ,'ui.select', 'ngSanitize'
  */
 angular
-  .module('eiffelApp', ['ngRoute','ngMaterial','ui.bootstrap','ngAnimate','ngTouch','slick'])
+  .module('eiffelApp', ['ngRoute','ngMaterial','ui.bootstrap','ngAnimate','ngTouch','slick','ngMessages','ngAria'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
