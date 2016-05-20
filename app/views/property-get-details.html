@@ -2,355 +2,356 @@
 <div class="body-inner-padding ng-scope">
     <div class="padding ng-scope ">
         <div class="row">
-<div class="col-sm-12 col-md-push-3 col-md-6">
-    <div class="box">
-        <div class="box-header">
-            <h2>Property</h2>
-        </div>
-        <div class="box-divider m-a-0"></div>
-<<<<<<< Updated upstream
-        <div class="box-body">
-            <form role="form" ng-submit="submit()" ng-controller="MoneyGetDetailsCtrl" ng-cloak>
-                <div class="row">
-                    <div class="container">
-                        <md-radio-group ng-model="data.group">
-                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                <md-radio-button value="Required" class="md-primary">Required</md-radio-button></div>
-                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                <md-radio-button value="Offered" class="md-primary"> Offered </md-radio-button>
-=======
-        <div class="box-body" ng-controller="PropertyGetDetailsCtrl as ctrl" ng-cloak>
-            <form role="form"
-                  ng-submit="ctrl.submit()"
-                  name="propertyForm"
-                  novalidate>
-                <div class="form-group row">
-                    <!-- <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>-->
-                    <div class="col-sm-10">
-
-                        <md-radio-group ng-model="property.group" ng-required="true" name="group" >
-                            <div class="col-sm-6">
-                                <md-radio-button value="Required"  class="md-primary">Required</md-radio-button>
-                            </div>
-                            <div class="col-sm-6">
-                                <md-radio-button value="Offered"   class="md-primary">Offered </md-radio-button>
->>>>>>> Stashed changes
-                            </div>
-
-                        </md-radio-group>
-<<<<<<< Updated upstream
-=======
-
-                        <!--<md-input-container>
-                            <md-radio-group name="status" id="status" ng-model="property.status" ng-required="true" class="" >
-
-                                <md-radio-button ng-repeat="p in typeProperty" ng-value="p">{{p}}</md-radio-button>
-                            </md-radio-group>
-                            <div ng-messages="myForm.status.$error">
-                                <div ng-message="required">myselect is required.</div>
-                            </div>
-                        </md-input-container>-->
-
-
-
-
-                        <!-- <input type="email" class="form-control" id="inputEmail3" placeholder="Email">-->
->>>>>>> Stashed changes
+            <div class="col-sm-12 col-md-push-3 col-md-6">
+                <div class="box">
+                    <div class="box-header">
+                        <h2>Property</h2>
                     </div>
-                    <div class="error">{{messageProerty}}</div>
-                </div>
-<<<<<<< Updated upstream
-                <div class="row">
-                    <div class="container">
-                        <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Title</p></div>
-                        <div class="col-md-8 col-sm-10 col-xs-8">
-                            <md-input-container class="md-block" flex-gt-sm>
-                                <label>Title</label>
-                                <input  type="text" name="title">
-                            </md-input-container></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="container">
-                        <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Description</p></div>
-                        <div class="col-md-8 col-sm-10 col-xs-8">
-                            <md-input-container class="md-block" flex-gt-sm>
-                                <label>Description</label>
-                                <input  type="text" name="description">
-                            </md-input-container></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="container">
-                        <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Rent Or Lease</p></div>
-                        <div class="col-md-8 col-sm-10 col-xs-8">
-                            <md-input-container class="md-block" flex-gt-sm>
-                                <label>Rent Or Lease</label>
-                                <input  type="text" name="rent">
-                            </md-input-container></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="container">
-                        <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Type of Property</p></div>
-                        <div class="col-md-8 col-sm-10 col-xs-8">
-                            <md-input-container class="md-block" flex-gt-sm>
-                                <label>State</label>
-                                <md-select ng-model="user.state">
-                                    <md-option ng-repeat="state in states" value="{{state.abbrev}}">
-                                        {{state.abbrev}}
-                                    </md-option>
-                                </md-select>
-                            </md-input-container>
-                    </div>
-                </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
-                <button class="btn btn-fw primary">Add Photos</button></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
-                        <button class="btn btn-fw primary">Add Videos</button>
-=======
+                    <div class="box-divider m-a-0"></div>
+                    <<<<<<< Updated upstream
+                    <div class="box-body">
+                        <form role="form" ng-submit="submit()" ng-controller="MoneyGetDetailsCtrl" ng-cloak>
+                            <div class="row">
+                                <div class="container">
+                                    <md-radio-group ng-model="data.group">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <md-radio-button value="Required" class="md-primary">Required</md-radio-button></div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <md-radio-button value="Offered" class="md-primary"> Offered </md-radio-button>
+                                            =======
+                                            <div class="box-body" ng-controller="PropertyGetDetailsCtrl as ctrl" ng-cloak>
+                                                <form role="form"
+                                                      ng-submit="ctrl.submit()"
+                                                      name="propertyForm"
+                                                      novalidate>
+                                                    <div class="form-group row">
+                                                        <!-- <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>-->
+                                                        <div class="col-sm-10">
 
-                <div class="eiff_form_ele1 form-group row">
+                                                            <md-radio-group ng-model="property.group" ng-required="true" name="group" >
+                                                                <div class="col-sm-6">
+                                                                    <md-radio-button value="Required"  class="md-primary">Required</md-radio-button>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <md-radio-button value="Offered"   class="md-primary">Offered </md-radio-button>
+                                                                    >>>>>>> Stashed changes
+                                                                </div>
 
-                    <label for="title" class="eiff_form_ele col-sm-2 form-control-label">Title</label>
+                                                            </md-radio-group>
+                                                            <<<<<<< Updated upstream
+                                                            =======
 
-                    <div class="eiffbtn1">
-                        <md-input-container  >
-                            <label>Title</label>
-                            <input  name="title"
-                                    type="text"
-                                    ng-model="property.title"
-                                    ng-required="true"
-                                    md-no-asterisk>
+                                                            <!--<md-input-container>
+                                                                <md-radio-group name="status" id="status" ng-model="property.status" ng-required="true" class="" >
 
-
-                            <div ng-messages="propertyForm.title.$error" >
-                                <div ng-message="required">This is required.</div>
-                            </div>
-
-                        </md-input-container>
-
-                    </div>
-
-                        <!-- <span ng-show="(form.title.$dirty || submitted) && form.title.$error.required">
-                          Email is required
-                        </span>-->
-
-                    <!-- <input type="password" class="form-control" id="inputPassword3" placeholder="Password">-->
-
-                </div>
-                <div class="eiff_form_ele1  form-group row">
-                    <label for="amount" class="eiff_form_ele col-sm-2 form-control-label">Description</label>
-
-                    <md-input-container>
-                        <label>Description</label>
-                        <input  type="text"
-                                name="description"
-                                ng-model="property.description"
-                                ng-required="true"
-                                md-no-asterisk>
-
-
-                        <div ng-messages="propertyForm.description.$error" >
-                            <div ng-message="required">This is required.</div>
-
-                        </div>
-
-                    </md-input-container>
-                    <!-- <input type="file" class="form-control">-->
-
-                </div>
-
-                <div class="eiff_form_ele1 form-group row">
-                    <label for="selectType" class="eiff_form_ele col-sm-2 form-control-label">Rent or Lease</label>
-                    <md-input-container>
-                        <label>Rent or Lease</label>
-                        <md-select ng-model="selectType" name="selectType" required="true">
-
-                            <md-option value="Rent">Rent</md-option>
-                            <md-option value="Lease">Lease</md-option>
-
-                        </md-select>
-
-                        <div ng-messages="propertyForm.selectType.$error" >
-                            <div ng-message="required">This is required.</div>
-                        </div>
-                        </md-input-container>
-
-                            <!--<md-input-container>
-                                <label>Rent or Lease</label>
-
-                                <md-select ng-model="property.selectType" id="selectType" name="selectType" required>
-                                    <md-option value=""></md-option>
-                                    <md-option ng-repeat="typeProperty in ctrl.typePropertys" value="{{typeProperty.name}}">{{typeProperty.name}}</md-option>
-                                </md-select>
-
-                                <div ng-messages="propertyForm.selectType.$error" >
-                                    <div ng-message="required">This is required.</div>
-                                </div>
-                            </md-input-container>-->
-
-
-                </div >
-                <div class="eiff_form_ele1 form-group row">
-                    <label for="Duration" class="eiff_form_ele col-sm-2 form-control-label"> Duration</label>
-
-                    <md-input-container>
-                        <label>Duration</label>
-                        <input  type="Duration" name="duration"
-                                ng-model="property.duration"
-                                ng-required="true"
-                                md-no-asterisk>
-
-
-                        <div ng-messages="propertyForm.description.$error" >
-                            <div ng-message="required">This is required.</div>
-
-                        </div>
-                    </md-input-container>
-                    <!-- <input type="file" class="form-control">-->
-
-                </div>
-
-                <div class="eiff_form_ele1 form-group row">
-                    <label for="Type of Property " class="eiff_form_ele  form-control-label">Type of Property :</label>
+                                                                    <md-radio-button ng-repeat="p in typeProperty" ng-value="p">{{p}}</md-radio-button>
+                                                                </md-radio-group>
+                                                                <div ng-messages="myForm.status.$error">
+                                                                    <div ng-message="required">myselect is required.</div>
+                                                                </div>
+                                                            </md-input-container>-->
 
 
 
-                    <div  layout="column" >
-                        <md-content class="md-padding" layout="column">
+
+                                                            <!-- <input type="email" class="form-control" id="inputEmail3" placeholder="Email">-->
+
+                                                        </div>
+                                                        <div class="error">{{messageProerty}}</div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="container">
+                                                            <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Title</p></div>
+                                                            <div class="col-md-8 col-sm-10 col-xs-8">
+                                                                <md-input-container class="md-block" flex-gt-sm>
+                                                                    <label>Title</label>
+                                                                    <input type="text" value="Click me!" uib-popover="I appeared on focus! Click away and I'll vanish..."  popover-trigger="focus" class="form-control">
+                                                                    <!--<input  type="text" name="title">-->
+                                                                </md-input-container></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="container">
+                                                            <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Description</p></div>
+                                                            <div class="col-md-8 col-sm-10 col-xs-8">
+                                                                <md-input-container class="md-block" flex-gt-sm>
+                                                                    <label>Description</label>
+                                                                    <input  type="text" name="description">
+                                                                </md-input-container></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="container">
+                                                            <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Rent Or Lease</p></div>
+                                                            <div class="col-md-8 col-sm-10 col-xs-8">
+                                                                <md-input-container class="md-block" flex-gt-sm>
+                                                                    <label>Rent Or Lease</label>
+                                                                    <input  type="text" name="rent">
+                                                                </md-input-container></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="container">
+                                                            <div class="col-md-4 col-sm-2 col-xs-4"><p class="eiff-form-field">Type of Property</p></div>
+                                                            <div class="col-md-8 col-sm-10 col-xs-8">
+                                                                <md-input-container class="md-block" flex-gt-sm>
+                                                                    <label>State</label>
+                                                                    <md-select ng-model="user.state">
+                                                                        <md-option ng-repeat="state in states" value="{{state.abbrev}}">
+                                                                            {{state.abbrev}}
+                                                                        </md-option>
+                                                                    </md-select>
+                                                                </md-input-container>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                                                            <button class="btn btn-fw primary">Add Photos</button></div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                                                            <button class="btn btn-fw primary">Add Videos</button>
+                                                            =======
+
+                                                            <div class="eiff_form_ele1 form-group row">
+
+                                                                <label for="title" class="eiff_form_ele col-sm-2 form-control-label">Title</label>
+
+                                                                <div class="eiffbtn1">
+                                                                    <md-input-container  >
+                                                                        <label>Title</label>
+                                                                        <input  name="title"
+                                                                                type="text"
+                                                                                ng-model="property.title"
+                                                                                ng-required="true"
+                                                                                md-no-asterisk>
+
+
+                                                                        <div ng-messages="propertyForm.title.$error" >
+                                                                            <div ng-message="required">This is required.</div>
+                                                                        </div>
+
+                                                                    </md-input-container>
+
+                                                                </div>
+
+                                                                <!-- <span ng-show="(form.title.$dirty || submitted) && form.title.$error.required">
+                                                                  Email is required
+                                                                </span>-->
+
+                                                                <!-- <input type="password" class="form-control" id="inputPassword3" placeholder="Password">-->
+
+                                                            </div>
+                                                            <div class="eiff_form_ele1  form-group row">
+                                                                <label for="amount" class="eiff_form_ele col-sm-2 form-control-label">Description</label>
+
+                                                                <md-input-container>
+                                                                    <label>Description</label>
+                                                                    <input  type="text"
+                                                                            name="description"
+                                                                            ng-model="property.description"
+                                                                            ng-required="true"
+                                                                            md-no-asterisk>
+
+
+                                                                    <div ng-messages="propertyForm.description.$error" >
+                                                                        <div ng-message="required">This is required.</div>
+
+                                                                    </div>
+
+                                                                </md-input-container>
+                                                                <!-- <input type="file" class="form-control">-->
+
+                                                            </div>
+
+                                                            <div class="eiff_form_ele1 form-group row">
+                                                                <label for="selectType" class="eiff_form_ele col-sm-2 form-control-label">Rent or Lease</label>
+                                                                <md-input-container>
+                                                                    <label>Rent or Lease</label>
+                                                                    <md-select ng-model="selectType" name="selectType" required="true">
+
+                                                                        <md-option value="Rent">Rent</md-option>
+                                                                        <md-option value="Lease">Lease</md-option>
+
+                                                                    </md-select>
+
+                                                                    <div ng-messages="propertyForm.selectType.$error" >
+                                                                        <div ng-message="required">This is required.</div>
+                                                                    </div>
+                                                                </md-input-container>
+
+                                                                <!--<md-input-container>
+                                                                    <label>Rent or Lease</label>
+
+                                                                    <md-select ng-model="property.selectType" id="selectType" name="selectType" required>
+                                                                        <md-option value=""></md-option>
+                                                                        <md-option ng-repeat="typeProperty in ctrl.typePropertys" value="{{typeProperty.name}}">{{typeProperty.name}}</md-option>
+                                                                    </md-select>
+
+                                                                    <div ng-messages="propertyForm.selectType.$error" >
+                                                                        <div ng-message="required">This is required.</div>
+                                                                    </div>
+                                                                </md-input-container>-->
+
+
+                                                            </div >
+                                                            <div class="eiff_form_ele1 form-group row">
+                                                                <label for="Duration" class="eiff_form_ele col-sm-2 form-control-label"> Duration</label>
+
+                                                                <md-input-container>
+                                                                    <label>Duration</label>
+                                                                    <input  type="Duration" name="duration"
+                                                                            ng-model="property.duration"
+                                                                            ng-required="true"
+                                                                            md-no-asterisk>
+
+
+                                                                    <div ng-messages="propertyForm.description.$error" >
+                                                                        <div ng-message="required">This is required.</div>
+
+                                                                    </div>
+                                                                </md-input-container>
+                                                                <!-- <input type="file" class="form-control">-->
+
+                                                            </div>
+
+                                                            <div class="eiff_form_ele1 form-group row">
+                                                                <label for="Type of Property " class="eiff_form_ele  form-control-label">Type of Property :</label>
 
 
 
-                            <md-chips ng-model="ctrl.selectedVegetables" md-autocomplete-snap
-                                      md-transform-chip="ctrl.transformChip($chip)"
-                                      md-require-match="ctrl.autocompleteDemoRequireMatch">
-                                <md-autocomplete
+                                                                <div  layout="column" >
+                                                                    <md-content class="md-padding" layout="column">
 
-                                        md-selected-item="ctrl.selectedItem"
-                                        md-search-text="ctrl.searchText"
-                                        md-items="item in ctrl.querySearch(ctrl.searchText)"
-                                        md-item-text="item.name"
-                                        name="item"
-                                        placeholder="Search for a property">
-                                    <span md-highlight-text="ctrl.searchText">{{item.name}}</span>
 
-                                    <div ng-messages="propertyForm.item.$error" >
-                                        <div ng-message="required">This is required.</div>
 
-                                    </div>
-                                   <!-- <span md-highlight-text="ctrl.searchText">{{item.name}}&lt;!&ndash; :: {{item.type}}&ndash;&gt;</span>-->
-                                </md-autocomplete>
-                                <md-chip-template>
+                                                                        <md-chips ng-model="ctrl.selectedVegetables" md-autocomplete-snap
+                                                                                  md-transform-chip="ctrl.transformChip($chip)"
+                                                                                  md-require-match="ctrl.autocompleteDemoRequireMatch">
+                                                                            <md-autocomplete
+
+                                                                                    md-selected-item="ctrl.selectedItem"
+                                                                                    md-search-text="ctrl.searchText"
+                                                                                    md-items="item in ctrl.querySearch(ctrl.searchText)"
+                                                                                    md-item-text="item.name"
+                                                                                    name="item"
+                                                                                    placeholder="Search for a property">
+                                                                                <span md-highlight-text="ctrl.searchText">{{item.name}}</span>
+
+                                                                                <div ng-messages="propertyForm.item.$error" >
+                                                                                    <div ng-message="required">This is required.</div>
+
+                                                                                </div>
+                                                                                <!-- <span md-highlight-text="ctrl.searchText">{{item.name}}&lt;!&ndash; :: {{item.type}}&ndash;&gt;</span>-->
+                                                                            </md-autocomplete>
+                                                                            <md-chip-template>
                                     <span>
                                       <strong>{{$chip.name}}</strong>
-                                      <!--<em>({{$chip.type}})</em>-->
+                                        <!--<em>({{$chip.type}})</em>-->
                                     </span>
-                                </md-chip-template>
-                            </md-chips>
+                                                                            </md-chip-template>
+                                                                        </md-chips>
 
-                        </md-content>
+                                                                    </md-content>
+
+                                                                </div>
+
+                                                                <div class="error" style="color:red">{{messageProerty}}</div>
+
+
+
+
+
+
+
+                                                            </div> <br>
+                                                            <div class="form-group row m-t-md">
+                                                                <div class="col-sm-offset-2 col-sm-10"><br>
+                                                                    <button type="submit" class="eiffbtn btn white ">Submit</button>
+                                                                    >>>>>>> Stashed changes
+                                                                </div>
+                                                            </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                </div><div class="col-sm-6 col-md-pull-6 col-md-3">
+                                <div class="box">
+                                    <div class="box-tool">
+                                        <ul class="nav">
+                                            <li class="nav-item inline dropdown">
+                                                <a class="nav-link text-muted" data-toggle="dropdown">
+                                                    <i class="material-icons md-18">&#xe164;</i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-scale pull-right dark">
+                                                    <a class="dropdown-item" href>Activities</a>
+                                                    <a class="dropdown-item" href>Feed</a>
+                                                    <a class="dropdown-item" href>Photo</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item">Follow</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-a-md text-center">
+                                        <p><img src="../assets/images/a1.jpg" class="img-circle w-xs"></p>
+                                        <a href class="text-md block">Jason Warren</a>
+                                        <p><small>London, UK</small></p>
+                                        <div>
+                                            <a href="" class="btn btn-icon btn-social rounded white btn-sm">
+                                                <i class="fa fa-facebook"></i>
+                                                <i class="fa fa-facebook indigo"></i>
+                                            </a>
+                                            <a href="" class="btn btn-icon btn-social rounded white btn-sm">
+                                                <i class="fa fa-twitter"></i>
+                                                <i class="fa fa-twitter light-blue"></i>
+                                            </a>
+                                            <a href="" class="btn btn-icon btn-social rounded white btn-sm">
+                                                <i class="fa fa-google-plus"></i>
+                                                <i class="fa fa-google-plus red"></i>
+                                            </a>
+                                        </div>
+                                        <div class="text-center m-t">
+                                            <a href class="btn btn-sm rounded primary w-sm m-y-xs">Follow</a>
+                                            <a href class="btn btn-sm rounded btn-outline b-primary w-sm">Invite</a>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutter b-t b-b"> <div class="col-xs-6 b-r">
+                                        <a class="p-a block text-center">
+                                            <span class="block _600">3219</span>
+                                            <span>Friends</span>
+                                        </a>
+                                    </div>
+                                        <div class="col-xs-6">
+                                            <a class="p-a block text-center">
+                                                <span class="block _600">1458</span>
+                                                <span>Followers</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="p-a">
+                                        <a href class="text-ellipsis"><i class="fa fa-link text-muted m-r-sm"></i> apack.com/subdomain</a>
+                                        <a href class="text-ellipsis"><i class="fa fa-globe text-muted m-r-sm"></i> yourdomain.com</a>
+                                    </div>
+                                </div>
+                                <div class="box light lt">
+                                    <div class="box-body">
+                                        <span class="pie_chart"><img width="270" height="202" src="../assets/images/chart2.png"></span>
+                                        <span><p> Profile 20% completed</p></span>
+
+                                        <div class="clear p-a-xs">
+
+                                            <a href class="btn btn-sm btn-rounded white m-t-xs text-center"> Edit Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="col-sm-6 col-md-3">
+
+                                </div>
+                            </div>
+
 
                     </div>
-
-                    <div class="error" style="color:red">{{messageProerty}}</div>
-
-
-
-
-
-
-
-                </div> <br>
-                <div class="form-group row m-t-md">
-                    <div class="col-sm-offset-2 col-sm-10"><br>
-                        <button type="submit" class="eiffbtn btn white ">Submit</button>
->>>>>>> Stashed changes
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div><div class="col-sm-6 col-md-pull-6 col-md-3">
-    <div class="box">
-        <div class="box-tool">
-            <ul class="nav">
-                <li class="nav-item inline dropdown">
-                    <a class="nav-link text-muted" data-toggle="dropdown">
-                        <i class="material-icons md-18">&#xe164;</i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-scale pull-right dark">
-                        <a class="dropdown-item" href>Activities</a>
-                        <a class="dropdown-item" href>Feed</a>
-                        <a class="dropdown-item" href>Photo</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item">Follow</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="p-a-md text-center">
-            <p><img src="../assets/images/a1.jpg" class="img-circle w-xs"></p>
-            <a href class="text-md block">Jason Warren</a>
-            <p><small>London, UK</small></p>
-            <div>
-                <a href="" class="btn btn-icon btn-social rounded white btn-sm">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-facebook indigo"></i>
-                </a>
-                <a href="" class="btn btn-icon btn-social rounded white btn-sm">
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-twitter light-blue"></i>
-                </a>
-                <a href="" class="btn btn-icon btn-social rounded white btn-sm">
-                    <i class="fa fa-google-plus"></i>
-                    <i class="fa fa-google-plus red"></i>
-                </a>
-            </div>
-            <div class="text-center m-t">
-                <a href class="btn btn-sm rounded primary w-sm m-y-xs">Follow</a>
-                <a href class="btn btn-sm rounded btn-outline b-primary w-sm">Invite</a>
-            </div>
-        </div>
-        <div class="row no-gutter b-t b-b"> <div class="col-xs-6 b-r">
-            <a class="p-a block text-center">
-                <span class="block _600">3219</span>
-                <span>Friends</span>
-            </a>
-        </div>
-            <div class="col-xs-6">
-                <a class="p-a block text-center">
-                    <span class="block _600">1458</span>
-                    <span>Followers</span>
-                </a>
-            </div>
-        </div>
-        <div class="p-a">
-            <a href class="text-ellipsis"><i class="fa fa-link text-muted m-r-sm"></i> apack.com/subdomain</a>
-            <a href class="text-ellipsis"><i class="fa fa-globe text-muted m-r-sm"></i> yourdomain.com</a>
-        </div>
-    </div>
-    <div class="box light lt">
-        <div class="box-body">
-            <span class="pie_chart"><img width="270" height="202" src="../assets/images/chart2.png"></span>
-            <span><p> Profile 20% completed</p></span>
-
-            <div class="clear p-a-xs">
-
-                <a href class="btn btn-sm btn-rounded white m-t-xs text-center"> Edit Profile</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-sm-6 col-md-3">
-    
-</div>
-</div>
-
-
-</div>
 
 
