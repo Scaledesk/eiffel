@@ -90,13 +90,13 @@ var _this=this;
           if(self.selectedVegetables.length>0){
 
              /* console.log(self.selectedVegetables);*/
-              console.log('not empty nitesh');
+              /*console.log('not empty nitesh');*/
 
           }else{
              /* console.log(self.selectedVegetables);*/
-              var messageProerty="";
-              $scope.messageProerty="Please Select property type";
-              console.log(messageProerty);
+              var messageProperty="";
+              $scope.messageProperty="Please Select property type";
+             /* console.log(messageProerty);*/
 
           }
 

@@ -88,7 +88,7 @@ margin-right: 100px;
 	border: 2px solid rgb(211, 244, 240);
 	padding: 5px;
 	border-radius: 5px;
-	background: rgba(12, 194, 170, 0.18);
+	background: #f0f0f0;
 }
 .collapse.in {
 	padding-bottom: 20px;
