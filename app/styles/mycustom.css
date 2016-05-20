@@ -85,9 +85,7 @@ margin-right: 100px;
 	margin-bottom: 20px;
 	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	color: #0CC2AA;
-	border: 2px solid rgb(211, 244, 240);
 	padding: 5px;
-	border-radius: 5px;
 	background: #f0f0f0;
 }
 .collapse.in {
@@ -124,3 +122,8 @@ margin-right: 100px;
 	width: 500px !important;
 	margin-left: 60px;
 }
+.eiff-cursor{
+	cursor: default !important;
+}
+.m-r-20 {
+	margin-right: 20rem !important; }
