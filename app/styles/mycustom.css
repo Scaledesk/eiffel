@@ -119,3 +119,8 @@ margin-right: 100px;
 .body-inner-padding{
 	padding-top: 65px;
 }
+.popover{
+	height: 100px !important;
+	width: 500px !important;
+	margin-left: 60px;
+}

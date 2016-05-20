@@ -15,4 +15,5 @@ angular.module('eiffelApp')
       'Karma'
     ];
       $rootScope.headerShow = "dashboard";
+      
   });
