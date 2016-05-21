@@ -1,0 +1,79 @@
+[4mRunning "serve:dist" (serve) task[24m
+
+[4mRunning "clean:dist" (clean) task[24m
+[32m>> [39m1 path cleaned.
+
+[4mRunning "wiredep:app" (wiredep) task[24m
+
+[4mRunning "wiredep:test" (wiredep) task[24m
+
+[4mRunning "useminPrepare:html" (useminPrepare) task[24m
+Configuration changed for [36mconcat[39m, [36muglify[39m, [36mcssmin[39m
+
+[4mRunning "concurrent:dist" (concurrent) task[24m
+    
+    [4mRunning "svgmin:dist" (svgmin) task[24m
+    Total saved: 0 B
+    
+    [32mDone, without errors.[39m
+        
+    [4mRunning "copy:styles" (copy) task[24m
+    Copied 9 files
+    
+    [32mDone, without errors.[39m
+        
+    [4mRunning "imagemin:dist" (imagemin) task[24m
+    Minified 0 images (saved 0 B)
+    
+    [32mDone, without errors.[39m
+    
+[4mRunning "postcss:server" (postcss) task[24m
+[32m>> [39m9 processed stylesheets created.
+
+[4mRunning "postcss:dist" (postcss) task[24m
+[32m>> [39m9 processed stylesheets created.
+
+[4mRunning "ngtemplates:dist" (ngtemplates) task[24m
+File [36m.tmp/templateCache.js[39m created.
+Added [36m.tmp/templateCache.js[39m to [33m<!-- build:js scripts/scripts.js -->[39m
+
+[4mRunning "concat:generated" (concat) task[24m
+File .tmp/concat/scripts/vendor.js created.
+File .tmp/concat/scripts/scripts.js created.
+
+[4mRunning "ngAnnotate:dist" (ngAnnotate) task[24m
+[32m>> [39m2 files successfully generated.
+
+[4mRunning "copy:dist" (copy) task[24m
+Copied 4 files
+
+[4mRunning "cdnify:dist" (cdnify) task[24m
+Going through [36mdist/404.html[39m, [36mdist/index.html[39m to update script refs
+✔ bower_components/angular/angular.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js
+✔ bower_components/angular/angular.js changed to //ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js
+
+[4mRunning "cssmin:generated" (cssmin) task[24m
+[31m>> [39mIgnoring remote @import of "https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" as no callback given.
+[32m>> [39m3 files created. 1.01 MB → 691.38 kB
+
+[4mRunning "uglify:generated" (uglify) task[24m
+[32m>> [39m2 files created.
+
+[4mRunning "filerev:dist" (filerev) task[24m
+Revved 4 files
+
+[4mRunning "usemin:html" (usemin) task[24m
+Replaced 2 references to assets
+
+[4mRunning "usemin:css" (usemin) task[24m
+Replaced 2 references to assets
+
+[4mRunning "usemin:js" (usemin) task[24m
+Replaced 2 references to assets
+
+[4mRunning "htmlmin:dist" (htmlmin) task[24m
+Minified 2 files
+
+[4mRunning "connect:dist:keepalive" (connect) task[24m
+Waiting forever...
+Started connect web server on http://localhost:9000
