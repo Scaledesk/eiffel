@@ -9,7 +9,7 @@
             </div>
             <div class="box-divider m-a-0"></div>
             <div class="box-body">
-                <form role="form" ng-submit="submit()" ng-controller="MoneyGetDetailsCtrl" ng-cloak>
+                <form role="form" ng-submit="submit()" ng-controller="QAGetDetailsCtrl" ng-cloak name="qaForm" novalidate>
 
                     <div class="row">
                         <div class="container">
@@ -20,7 +20,11 @@
                                     <input  type="text" name="ask" uib-popover="Lorem Ipsum is simply dummy text of
                                         the printing and typesetting industry. Lorem Ipsum has been the
                                         industry's standard dummy text ever since" popover-trigger="focus" popover-placement="right-top"
-                                            class="form-control">
+                                            class="form-control" ng-required="true" ng-model="ask">
+
+                                    <div ng-messages="qaForm.ask.$error" >
+                                        <div ng-message="required">This is required.</div>
+                                    </div>
                                 </md-input-container></div>
                         </div>
                     </div>
@@ -33,7 +37,11 @@
                                     <input  type="text" name="whom" uib-popover="Lorem Ipsum is simply dummy text of
                                         the printing and typesetting industry. Lorem Ipsum has been the
                                         industry's standard dummy text ever since" popover-trigger="focus" popover-placement="right-top"
-                                            class="form-control">
+                                            class="form-control" ng-required="true" ng-model="whom">
+
+                                    <div ng-messages="qaForm.whom.$error" >
+                                        <div ng-message="required">This is required.</div>
+                                    </div>
                                 </md-input-container></div>
                         </div>
                     </div>
@@ -46,7 +54,11 @@
                                     <input  type="text" name="location" uib-popover="Lorem Ipsum is simply dummy text of
                                         the printing and typesetting industry. Lorem Ipsum has been the
                                         industry's standard dummy text ever since" popover-trigger="focus" popover-placement="right-top"
-                                            class="form-control">
+                                            class="form-control" ng-required="true" ng-model="location">
+
+                                    <div ng-messages="qaForm.location.$error" >
+                                        <div ng-message="required">This is required.</div>
+                                    </div>
                                 </md-input-container></div>
                         </div>
                     </div>
