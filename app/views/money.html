@@ -171,80 +171,85 @@
 
     <!-- new sidebar -->
 
-      <div class="col-sm-6 col-md-3 ">
-       <div class="box container left-side">
-          <div ng-controller="MoneyCtrl">
-              <script type="text/ng-template" id="group-template.html">
-                  <div class="panel {{panelClass || 'panel-default'}}">
-                      <div class="panel-heading">
-                          <h4 class="panel-title left-title b-primary">
-                              <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()"
-                                 uib-accordion-transclude="heading"><span
-                                      ng-class="{'text-muted': isDisabled}">{{heading}}</span></a>
-                          </h4>
-                      </div>
-                      <div class="panel-collapse collapse" uib-collapse="!isOpen">
-                          <div class="panel-body" style="text-align: right" ng-transclude></div>
-                      </div>
-                  </div>
-              </script>
-
-              <uib-accordion close-others="oneAtATime">
-                  <uib-accordion-group heading="Filter Feeds" panel-class="panel-danger">
-                   <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                      class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+    <div class="col-sm-6 col-md-3 ">
+     <div class="box container left-side">
+      <div ng-controller="MoneyCtrl">
+       <script type="text/ng-template" id="group-template.html">
+        <div class="panel {{panelClass || 'panel-default'}}">
+         <div class="panel-heading">
+          <h4 class="panel-title left-title b-primary">
+           <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()"
+              uib-accordion-transclude="heading"><span
+                   ng-class="{'text-muted': isDisabled}">{{heading}}</span></a>
+          </h4>
+         </div>
+         <div class="panel-collapse collapse" uib-collapse="!isOpen">
+          <div class="panel-body" style="text-align: right" ng-transclude></div>
+         </div>
+        </div>
+       </script>
+       <uib-accordion close-others="oneAtATime">
+        <uib-accordion-group heading="Filter Feeds" panel-class="panel-danger">
+         <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+            class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
                     </span>
-                    <span>Newest</span></a>
-                   <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                      class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+          <span>Newest</span></a>
+         <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+            class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
                     </span>
-                    <span>Popular</span></a>
-                   <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item
+          <span>Popular</span></a>
+         <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item
                    text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
                     </span>
-                    <span>Older</span></a>
-                  </uib-accordion-group>
-                  <uib-accordion-group heading="My Network" panel-class="panel-danger">
-                      <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                         class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+          <span>Older</span></a>
+        </uib-accordion-group>
+        <uib-accordion-group heading="My Network" panel-class="panel-danger">
+         <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+            class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
        <i class="material-icons">people</i></span> <span>My connection</span></a>
-                   <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                      class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="material-icons">person_add</i></span>
-                          <span>Add Contacts</span></a>
-                      <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-user" aria-hidden="true"></i></span>
-                       <span>People You May Know</span></a>
+         <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+            class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="material-icons">person_add</i></span>
+          <span>Add Contacts</span></a>
+         <a data-toggle="modal" data-target="#chat" data-dismiss="modal"  class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle"><i class="fa fa-user" aria-hidden="true"></i></span>
+          <span>People You May Know</span></a>
 
-                  </uib-accordion-group>
+        </uib-accordion-group>
 
 
-                  <uib-accordion-group heading="Interest" panel-class="panel-danger">
-                      <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                         class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
+        <uib-accordion-group heading="Interest" panel-class="panel-danger">
+         <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+            class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm img-circle">
         <i class="material-icons">location_city</i></span>Companies</a>
-                      <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                         class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
+         <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+            class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
        img-circle"><i class="fa fa-users" aria-hidden="true"></i></span>Groups</a>
-                      <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
-                         class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
+         <a data-toggle="modal" data-target="#chat" data-dismiss="modal"
+            class="list-group-item text-ellipsis" href="#"><span class="w-24 m-r-sm
        img-circle"><i class="fa fa-plus" aria-hidden="true"></i></span>More</a>
-                  </uib-accordion-group>
+        </uib-accordion-group>
 
-              </uib-accordion>
-          </div>
-
+       </uib-accordion>
       </div>
-       <div class="row pull-bottom">
-        <div class="pull-center">
-         <div class=" box">
-             <div class="box-header">
-          <p>Add Feeds</p>
-             </div>
-             <div class="box-body">
-         <button class="md-btn md-fab m-b-sm white eiff-fab "><i class="material-icons md-24"></i></button></div>
-        </div></div>
-       </div>
+
+     </div>
+
+
+     <div class="row pull-bottom">
+      <div class="pull-center">
+       <div class="box">
+
+        <a class="eiff_fab"ng-href="/#/money-get-details">
+         <button class="md-btn md-fab m-b-sm white eiff-fab "><i class="material-icons md-24"></i>
+          <md-tooltip md-direction="top">
+           Make new Money Post
+          </md-tooltip>
+         </button> </a>
 
        </div>
+      </div>
+     </div>
+
+    </div>
       <!--END SIDEBAR-->
     </div>
 
