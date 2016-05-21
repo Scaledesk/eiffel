@@ -8,7 +8,7 @@
  * Controller of the eiffelApp
  */
 angular.module('eiffelApp')
-  .controller('NewsCtrl', function () {
+  .controller('NewsCtrl', function ($rootScope,$scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

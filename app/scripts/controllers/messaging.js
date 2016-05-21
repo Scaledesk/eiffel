@@ -8,10 +8,11 @@
  * Controller of the eiffelApp
  */
 angular.module('eiffelApp')
-  .controller('MessagingCtrl', function () {
+  .controller('MessagingCtrl', function ($rootScope,$scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+      $rootScope.headerShow = "dashboard";
   });
