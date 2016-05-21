@@ -1,0 +1,36 @@
+[4mRunning "serve:dist" (serve) task[24m
+
+[4mRunning "clean:dist" (clean) task[24m
+[32m>> [39m1 path cleaned.
+
+[4mRunning "wiredep:app" (wiredep) task[24m
+
+[4mRunning "wiredep:test" (wiredep) task[24m
+
+[4mRunning "useminPrepare:html" (useminPrepare) task[24m
+Configuration changed for [36mconcat[39m, [36muglify[39m, [36mcssmin[39m
+
+[4mRunning "concurrent:dist" (concurrent) task[24m
+    
+    [4mRunning "copy:styles" (copy) task[24m
+    Copied 9 files
+    
+    [32mDone, without errors.[39m
+        
+    [4mRunning "svgmin:dist" (svgmin) task[24m
+    Total saved: 0 B
+    
+    [32mDone, without errors.[39m
+        
+    [4mRunning "imagemin:dist" (imagemin) task[24m
+    Minified 0 images (saved 0 B)
+    
+    [32mDone, without errors.[39m
+    
+[4mRunning "postcss:server" (postcss) task[24m
+[32m>> [39m9 processed stylesheets created.
+
+[4mRunning "postcss:dist" (postcss) task[24m
+[32m>> [39m9 processed stylesheets created.
+
+[4mRunning "ngtemplates:dist" (ngtemplates) task[24m
