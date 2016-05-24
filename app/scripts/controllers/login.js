@@ -24,7 +24,7 @@ angular.module('eiffelApp')
           // $scope.headerShow="dashboard";
        //alert(567981);
               /*  console.log('dbhsvhdcgvshdcgsdc');*/
-          $location.path('/dashboard/');
+          $location.path('/');
           /*window.location('#/dashboard');*/
       }
 

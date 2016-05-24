@@ -62,12 +62,13 @@
          Leave a comment
         </md-tooltip>
        </a><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-
+       <div ng-controller="DemoCtrl as demo" layout="column" ng-cloak>
        <a  href data-toggle="collapse" data-target="#" aria-label="Share">
         <i class="fa fa-share-alt text-muted" aria-hidden="true"></i> Share
         <md-tooltip md-direction="{{demo.tipDirection}}">
            Share this post with friends
         </md-tooltip></a>
+        </div>
       </div>
       <div class="box collapse m-a-1 b-a" id="reply-1">
        <form>
@@ -124,7 +125,7 @@
         </a>
        </div>
        <div class="text-center m-t">
-        <a href class="btn btn-sm rounded primary w-sm m-y-xs">Edit</a>
+        <a href="/#/settings" class="btn btn-sm rounded primary w-sm m-y-xs">Edit</a>
         <a href class="btn btn-sm rounded btn-outline b-primary w-sm">Sync</a>
        </div>
       </div>
@@ -149,18 +150,18 @@
      </div>
      <div class="box light lt">
       <div class="box-body">
-       <!--pie chart testing
-       <div class="box-body">
-        <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="[{&quot;data&quot;:75,&quot;label&quot;:&quot;iPhone&quot;},{&quot;data&quot;:20,&quot;label&quot;:&quot;iPad&quot;}],
-              {
-                series: { pie: { show: true, innerRadius: 0, stroke: { width: 0 }, label: { show: true, threshold: 0.05 } } },
-                legend: {backgroundColor: 'transparent'},
-                colors: ['#0cc2aa','#fcc100'],
-                grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },
-                tooltip: true,
-                tooltipOpts: { content: '%s: %p.0%' }
-              }" style="height: 200px; padding: 0px; position: relative;"><canvas class="flot-base" width="367" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 367px; height: 200px;"></canvas><canvas class="flot-overlay" width="367" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 367px; height: 200px;"></canvas><div class="legend"><div style="position: absolute; width: 58px; height: 44px; top: 5px; right: 5px; opacity: 0.85; background-color: transparent;"> </div><table style="position:absolute;top:5px;right:5px;;font-size:smaller;color:rgba(120,120,120,0.5)"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(12,194,170);overflow:hidden"></div></div></td><td class="legendLabel">iPhone</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(252,193,0);overflow:hidden"></div></div></td><td class="legendLabel">iPad</td></tr></tbody></table></div><span class="pieLabel" id="pieLabel0" style="position: absolute; top: 162px; left: 198.5px;"><div style="font-size:x-small;text-align:center;padding:2px;color:rgb(12,194,170);">iPhone<br>79%</div></span><span class="pieLabel" id="pieLabel1" style="position: absolute; top: 4px; left: 82px;"><div style="font-size:x-small;text-align:center;padding:2px;color:rgb(252,193,0);">iPad<br>21%</div></span></div>
-       </div>-->
+      <!--pie chart testing-->
+       <!--<div class="box-body">-->
+        <!--<div ui-jp="plot" ui-refresh="app.setting.color" ui-options="[{&quot;data&quot;:75,&quot;label&quot;:&quot;iPhone&quot;},{&quot;data&quot;:20,&quot;label&quot;:&quot;iPad&quot;}],-->
+               <!--{-->
+                <!--series: { pie: { show: true, innerRadius: 0, stroke: { width: 0 }, label: { show: true, threshold: 0.05 } } },-->
+                <!--legend: {backgroundColor: 'transparent'},-->
+                <!--colors: ['#0cc2aa','#fcc100'],-->
+                <!--grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },-->
+                <!--tooltip: true,-->
+                <!--tooltipOpts: { content: '%s: %p.0%' }-->
+              <!--}" style="height: 200px; padding: 0px; position: relative;"><canvas class="flot-base" width="367" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 367px; height: 200px;"></canvas><canvas class="flot-overlay" width="367" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 367px; height: 200px;"></canvas><div class="legend"><div style="position: absolute; width: 58px; height: 44px; top: 5px; right: 5px; opacity: 0.85; background-color: transparent;"> </div><table style="position:absolute;top:5px;right:5px;;font-size:smaller;color:rgba(120,120,120,0.5)"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(12,194,170);overflow:hidden"></div></div></td><td class="legendLabel">iPhone</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(252,193,0);overflow:hidden"></div></div></td><td class="legendLabel">iPad</td></tr></tbody></table></div><span class="pieLabel" id="pieLabel0" style="position: absolute; top: 162px; left: 198.5px;"><div style="font-size:x-small;text-align:center;padding:2px;color:rgb(12,194,170);">iPhone<br>79%</div></span><span class="pieLabel" id="pieLabel1" style="position: absolute; top: 4px; left: 82px;"><div style="font-size:x-small;text-align:center;padding:2px;color:rgb(252,193,0);">iPad<br>21%</div></span></div>-->
+       <!--</div>-->
        <span class="pie_chart"><img width="270" height="202" src="../assets/images/chart2.png"></span>
        <span><p> Profile 20% completed</p></span>
 
